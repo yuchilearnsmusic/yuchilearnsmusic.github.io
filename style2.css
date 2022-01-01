@@ -1,0 +1,403 @@
+/* ----------------------- Universal Styles Begins -------------------------- */
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+
+body {
+    font-family: "Lilita One";
+    font-size: 4vw;
+    color: white;
+}
+
+/* Headings */
+
+h2 {
+    font-weight: 400;
+    color:black;
+    font-size: 6.5vw;
+}
+
+h3 {
+    color: #FFBD59;
+    font-size: 3vh;
+    font-weight: 50;
+}
+
+h4 {
+    font-size: 5.5vw;
+    font-weight: 600;
+}
+
+h5 {
+    font-weight: 300;
+    font-size: 3vw;
+}
+
+
+/* Colours */
+
+.orange {
+    background-color: #FFBD59;
+}
+
+.light-orange {
+    background-color: #FFEFAD;
+}
+
+.green {
+    background-color: #92D050;
+}
+
+.blue {
+    background-color: #87CCFF;
+}
+
+.red {
+    background-color: #FF854D;
+}
+
+/* ----------------------- Universal Styles Ends --------------------------- */
+
+/* --------------------------- Header Begins ------------------------------- */
+
+header {
+    width:100%;
+    height:10vh;
+
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index: 2;
+
+    background:white;
+}
+
+/* Logo */
+
+.logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-words {
+    height:120%;
+    width:auto;
+}
+
+.logo-img {
+    height: 100%;
+    width: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FFBD59;
+    font-size: 3vh;
+    font-weight: 50;
+}
+
+
+/* ------------------------------ Header Ends ------------------------------- */
+
+/* ------------------------------ Learn Begins ------------------------------- */
+
+.learn {
+    margin-top:10vh;
+    height:90vh;
+    width:100%;
+    background-color: white;
+    border-top: 2px solid orange;
+    padding: 2vw;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Text Content */
+
+.learn-text {
+    width: 100%;
+    height: 15vh;
+    padding: 2vh 2vw 0 2vw;
+}
+
+.learn-categories {
+    padding-top:1vh;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.category1, .category2, .category3 {
+    width: 30vw;
+    text-align: center;
+    padding: 1vw;
+    border-radius: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.active {
+    background-color: #FFBD59;
+    color:white;
+}
+
+/* Images of Modules */
+
+/* Layout of Modules */
+
+.learn-courses {
+    width:100%;
+    height: 75vh;
+    display:flex;
+}
+
+.course-row {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 2vh;
+}
+
+.course-slot {
+    width: 42vw;
+}
+
+/* Specific Categories (hide when not selected) */
+
+.compression-courses {
+    width:100%;
+
+}
+
+.course-img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* ------------------------ TITLE BEGINS ----------------------------*/
+
+.title-card{
+    height:85vh;
+    width:100%;
+    margin-top: 10vh;
+    padding:1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 6px 10px 0px rgba(255, 121, 89, 0.2), 0 12px 20px 0 rgba(255, 121, 89, 0.19);
+}
+
+/* Title Image */
+
+.title-image-holder {
+    height: 100%;
+    width: 55%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-title {
+    height: auto;
+    width: 35vw;
+}
+
+/* Title Text */
+
+.title-text{
+    width: 45%;
+    height: 100%;
+    line-height: 4.5vw;
+    padding-top: 25vh;
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.75vw 4vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: "Balsamiq Sans";
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+button a {
+    color: #92D050;
+    text-decoration: none;
+
+}
+
+
+/* ------------------------ TITLE ENDS ----------------------------*/
+
+
+/* ------------------------------ Learn Ends ------------------------------- */
+
+
+@media (min-width: 449px) {
+
+    /* Universal Begins*/
+
+    h6 {
+        font-size: 2vw;
+        font-weight: 50;
+        text-align: center;
+    }
+
+    /* Universal Ends*/
+
+    /* Mobile Only Begins */
+
+    .mobile {
+        display:none;
+    }
+
+    .computer {
+        display: block;
+    }
+
+    /* Mobile Only Ends */
+
+    
+    /* Header Begins */
+
+    header {
+        padding:1% 10%;
+    }
+
+    /* Header Ends */
+
+    /* Learn Begins */
+
+    .course-slot {
+        width: 23vw;
+        padding: 2vw;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .learn h2 {
+        font-size: 3vw;
+    }
+
+    .category1, .category2, .category3 {
+        text-align: center;
+        padding: 1vw;
+        border-radius: 1vw;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .compression-courses {
+        margin-top: 5vw;
+        height:60vh;
+        overflow: scroll;
+    }
+
+    .learn-categories {
+        padding-top:2vh;
+    }
+
+    /* Learn Ends */
+
+}
+
+
+@media (max-width: 448px) {
+
+    .mobile {
+        display:block;
+    }
+
+    .computer {
+        display:none;
+    }
+
+    /* Header Begins */
+
+    header {
+        padding:1% 0;
+    }
+
+    .img-menu {
+        height:65%;
+        width:auto;
+        margin-right: 5vw;
+    }
+
+    .img-close {
+        height:80%;
+        width:auto;
+        margin-right: 5vw;
+        display: flex;
+    }
+
+    /* Header Ends */
+
+    /* Title Begins*/
+
+    .title-card{
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+
+
+    .title-image-holder {
+        height: 60%;
+        width: 100%;
+        padding: 0 4vw;
+    }
+    
+    .img-title {
+        height: auto;
+        width: 100%;
+        /* position: relative;
+        bottom: -7%; */
+    }
+    
+    /* Title Text */
+    
+    .title-text{
+        width: 100%;
+        height: 20%;
+        line-height: 6vh;
+        padding-top: 3vw;
+        text-align: center;
+    }
+
+    .title-text h4{
+        font-size: 13vw;
+    }
+    
+    .title-text h5 {
+        font-size: 6.5vw;
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 1.5vw 6vw;
+
+    }
+    
+    /* Title Ends*/
+
+}
+
+
+/* Hide (has to go at the end so it can override other styles) */
+
+.hide {
+    display: none;
+}

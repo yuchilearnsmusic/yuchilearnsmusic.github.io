@@ -1,0 +1,549 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+
+
+body{
+    font-family: "Lilita One";
+    font-weight: 100;
+    font-size: 16px;
+    color:white;
+}
+
+h1{
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 3.5vw;
+}
+
+/* Arrow Controls */
+h5 {
+    font-family: "Balsamiq Sans";
+    color: #92D050;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+/* Header Begins */
+
+header {
+    display:flex;
+    justify-content: space-between;
+    background:white;
+    width:100%;
+    height:10vh;
+    padding:1% 10%;
+    position: fixed;
+    top:0;
+    z-index: 2;
+    overflow:hidden;
+}
+
+.logo-container, .menu, .close, .resources-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-words {
+    height:140%;
+    width:auto;
+}
+
+.menu h3, .resources-container h3 {
+    margin-left: 10%;
+    color: #FFBD59;
+    font-family: "Lilita One";
+    font-size: 3vh;
+    font-weight: 50;
+}
+
+/* Mobile Nav */
+
+.menu, .close, .nav-elem1, .nav-elem2, .nav-elem3 {
+    cursor: pointer;
+}
+
+.close {
+    display:none;
+}
+
+#img-menu{
+    display:none;
+}
+
+img{
+    height:100%;
+    width:auto;
+}
+
+/* Header Ends */
+
+/* Title Card */
+
+.title-card{
+    height:85vh;
+    width:100%;
+    margin-top: 10vh;
+    padding:1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 6px 10px 0px rgba(255, 121, 89, 0.2), 0 12px 20px 0 rgba(255, 121, 89, 0.19);
+}
+
+.title-image-holder {
+    height: 100%;
+    width: 55%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-title {
+    height: 90%;
+    width: auto;
+}
+
+.title-text{
+    width: 45%;
+    height: 100%;
+    font-family: "Lilita One";
+    line-height: 10vh;
+    position: relative;
+    padding-top: 25vh;
+}
+
+.title-text h1{
+    font-size: 5.5vw;
+    font-weight: 600;
+}
+
+.title-text h3 {
+    font-weight: 300;
+    font-size: 3vw;
+}
+
+button {
+    background-color: white;
+    border: none;
+    color: #92D050;
+    border-radius: 1.5rem;
+    padding: 0.75vw 4vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: "Balsamiq Sans";
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+
+.hide {
+    display: none;
+}
+
+/* MOBILE NAV BEGINS */
+
+.mobile-nav {
+    margin-top:10vh;
+    height:90vh;
+    width:100%;
+    background-color: white;
+    border-top: 2px solid orange;
+    padding: 2vw;
+
+    flex-direction: column;
+    display:none;
+}
+
+.nav-text {
+    width: 100%;
+    height: 15vh;
+    padding: 0 2vw;
+}
+
+.nav-text-prompt h1 {
+    font-family: "Lilita One";
+    font-weight: 400;
+    color:black;
+    font-size: 6.5vw;
+    margin: 2vh 0;
+}
+
+.nav-categories {
+    padding-top:1vh;
+    width:100%;
+    display:flex;
+}
+
+.nav-elem1, .nav-elem2, .nav-elem3 {
+    width: 30vw;
+    text-align: center;
+    font-size: 4vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-left: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-family: "Lilita One";
+    color:black;
+}
+
+/* Style the active class */
+
+.active {
+    background-color: #FFBD59;
+    color:white;
+}
+
+.nav-courses {
+    width:100%;
+    height: 75vh;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.compression-courses {
+    width:100%;
+}
+
+.course-row {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 2vh;
+}
+
+.course-slot {
+    width: 42vw;
+}
+
+.course-slot img {
+    width: 100%;
+    height: auto;
+}
+
+/* MOBILE NAV ENDS */
+
+
+
+
+
+
+.content {
+    padding-top:5vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+
+.card{
+    height:60vh;
+    width:100%;
+    border-radius:3.5em;
+    margin-bottom: 5vh;
+    padding:4%;
+    /* padding:1vh; for browser */
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 6px 10px 0px rgba(255, 121, 89, 0.2), 0 12px 20px 0 rgba(255, 121, 89, 0.19);
+    overflow:hidden;
+}
+
+.big-card {
+    height:80vh;
+}
+
+.img-icon{
+    /* width:60%; for browser */
+    height:100%;
+}
+
+.icon {
+    height: 100%;
+}
+
+.right {
+    position: relative;
+    right:0;
+}
+
+.left {
+    position: relative;
+    left:0;
+}
+
+.row{
+    height:20%;
+    width:100%;
+}
+
+.title, .description {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 1vw;
+}
+
+.picture {
+    width:100%;
+    height: 60%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small {
+    height: 50vh;
+}
+
+/* card colours */
+
+.orange {
+    background-color: #FFBD59;
+}
+
+.light-orange {
+    background-color: #FFEFAD;
+}
+
+.green {
+    background-color: #92D050;
+}
+
+.blue {
+    background-color: #87CCFF;
+}
+
+.red {
+    background-color: #FF854D;
+}
+
+/* footer */
+
+footer {
+    height: 8vh;
+    width:100%;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.75%;
+}
+
+.logo {
+    height: 100%;
+}
+
+.footer-message {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.instagram-holder {
+    height:100%;
+}
+
+.instagram{
+    height: 80%;
+}
+
+
+/* card content 744*/
+
+@media (max-width:448px){
+
+    .content {
+        padding-top:5vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Computer Only Begins */
+    .logo-words, .learn {
+        display:none;
+    }
+
+    /* Mobile Only Begins */
+
+    #img-menu{
+        display:block;
+        height:80%;
+        width:auto;
+    }
+    
+    /* Mobile Only Ends */
+
+    header {
+        height:10vh;
+    }
+
+    /* Layout */
+
+    .information {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Title Card */
+
+    .title-card{
+        height:90vh;
+        width:100%;
+        padding:1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 1.5rem 1.5rem;
+        margin-top:10vh;
+    }
+
+    .img-title {
+        width:100%;
+        height: auto;
+        position: relative;
+        bottom:5vh;
+    }
+
+    /* Cards */
+
+    h1{
+        font-size: 4.5vw;
+        font-weight: 100;
+    }
+
+    .row{
+        height:15%;
+        width:100%;
+        display: flex;
+    }
+    
+    .icon {
+        width:25%;
+        padding: 2%;
+    }
+    
+    .title {
+        display: flex;
+        align-items: center;
+        width: 85%;
+        padding:2%;
+    }
+    
+    .picture {
+        width:100%;
+        height: 70%;
+    }
+    
+    .description {
+        display: flex;
+        align-items: center;
+        width: 85%;
+        padding:2%;
+    
+    }
+    
+    .img-icon{
+        /* width:60%; for browser */
+        height:100%;
+    }
+    
+    .img-picture{
+        width:90%;
+        height:auto;
+    }
+
+    .circle-picture{
+        width:80%;
+        height:auto;
+    }
+    
+    .question-picture {
+        position:relative;
+        left:3%;
+    }
+
+    .full-row1{
+        width:100%;
+        height:30%;
+        padding-top: 10%;
+    }
+    .full-row2{
+        width:100%;
+        height:70%;
+    }
+
+    .full-picture {
+        width: 100%;
+        height: auto;
+
+        position:relative;
+        bottom: -10%;
+        /* bottom:-32%; */
+        /* border: 2px solid red */
+    }
+
+    .info h3 {
+        text-align: center;
+        font-weight: 300;
+    }
+
+    footer {
+        height: 30vh;
+        width:100%;
+        border-radius: 1.5rem 1.5rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width:10vh;
+        height: auto;
+        position: relative;
+        right: -2%;
+    }
+
+    .footer-message {
+        margin: 1.5vh 0;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .instagram{
+        width:5vh;
+        height: auto;
+    }
+
+} 
+
+@media (max-width:348px) {
+    .card{
+        padding:6%;
+    }
+
+    h1{
+        font-size:1em;
+    }
+}
