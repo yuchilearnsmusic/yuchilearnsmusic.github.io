@@ -247,7 +247,7 @@ button a {
 /* ------------------------------ Learn Ends ------------------------------- */
 
 
-@media (min-width: 449px) {
+@media (min-width: 482px) {
 
     /* Universal Begins*/
 
@@ -315,7 +315,7 @@ button a {
 }
 
 
-@media (max-width: 448px) {
+@media (max-width: 481px) {
 
     .mobile {
         display:block;
