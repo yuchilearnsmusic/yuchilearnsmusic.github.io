@@ -48,7 +48,7 @@ h5 {
 }
 
 .green {
-    background-color: black;
+    background-color: #92D050;
 }
 
 .blue {
@@ -311,6 +311,87 @@ button a {
     }
 
     /* Learn Ends */
+
+}
+
+
+@media (max-width: 1024) and (orientation: portrait) {
+
+    .mobile {
+        display:block;
+    }
+
+    .computer {
+        display:none;
+    }
+
+    /* Header Begins */
+
+    header {
+        padding:1% 0;
+    }
+
+    .img-menu {
+        height:65%;
+        width:auto;
+        margin-right: 5vw;
+    }
+
+    .img-close {
+        height:80%;
+        width:auto;
+        margin-right: 5vw;
+        display: flex;
+    }
+
+    /* Header Ends */
+
+    /* Title Begins*/
+
+    .title-card{
+        margin-top: 10vh;
+        flex-direction: column;
+    }
+
+
+    .title-image-holder {
+        height: 60%;
+        width: 100%;
+        padding: 0 4vw;
+    }
+    
+    .img-title {
+        height: auto;
+        width: 100%;
+        /* position: relative;
+        bottom: -7%; */
+    }
+    
+    /* Title Text */
+    
+    .title-text{
+        width: 100%;
+        height: 20%;
+        line-height: 6vh;
+        padding-top: 3vw;
+        text-align: center;
+    }
+
+    .title-text h4{
+        font-size: 13vw;
+    }
+    
+    .title-text h5 {
+        font-size: 6.5vw;
+    }
+
+    button {
+        font-size: 4vw;
+        padding: 1.5vw 6vw;
+
+    }
+    
+    /* Title Ends*/
 
 }
 
