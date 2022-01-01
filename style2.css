@@ -315,7 +315,7 @@ button a {
 }
 
 
-@media (max-width: 1025px) and (orientation: portrait) {
+@media (max-width: 1601px) and (orientation: portrait) {
 
     .mobile {
         display:block;
