@@ -97,6 +97,10 @@ function removeActive() {
 
 /* ----------------------- RESPONSIVE CARDS BEGINS --------------------------*/
 
+if (width / height < 0.8){
+    
+}
+
 if (width / height < 0.7) {
 
     imgPicture.forEach((item) => {
@@ -105,6 +109,8 @@ if (width / height < 0.7) {
         item.style.marginLeft = "auto";
         item.style.marginRight = "auto";
     })
+
+    phone();
 }
 
 
