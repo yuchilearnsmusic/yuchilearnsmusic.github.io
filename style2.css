@@ -291,10 +291,6 @@ button a {
     justify-content: space-between;
 }
 
-.icon, .empty {
-    width: 10vw;
-}
-
 /* Pictures */
 
 .img-icon {
@@ -383,6 +379,12 @@ button a {
 
 }
 
+@media (orientation: landscape) {
+    .icon, .empty {
+        width: 10vw;
+    }
+}
+
 
 @media (max-width: 1601px) and (orientation: portrait) {
 
@@ -467,6 +469,39 @@ button a {
     }
     
     /* Title Ends*/
+
+    /* Cards Begin */
+
+    .big-card {
+        height:65vh;
+    }
+
+    .card {
+        padding: 5vw;
+        border-radius: 12vw;
+    }
+
+    .title h5 {
+        font-size: 7vw;
+    }
+
+    .title-top {
+        padding-left: 3vw;
+    }
+
+    .img-icon {
+        width: 20vw;
+    }
+
+    .img-picture {
+        width: 65vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Cards End */
+
 
 }
 
