@@ -104,10 +104,12 @@ if (width / height < 0.61) {
 
     imgPicture.forEach((item) => {
         item.style.width = "65vw";
-        item.style.height = "auto";
-        item.style.marginLeft = "auto";
-        item.style.marginRight = "auto";
     })
+
+    bigCard.forEach((item) => {
+        item.style.height = "65vh";
+    })
+
     phone();
 }
 
@@ -117,9 +119,6 @@ if (width / height < 0.7) {
 
     imgPicture.forEach((item) => {
         item.style.width = "63vw";
-        item.style.height = "auto";
-        item.style.marginLeft = "auto";
-        item.style.marginRight = "auto";
     })
 
     phone();
@@ -128,33 +127,12 @@ if (width / height < 0.7) {
 /* for shorter tablets */
 
 if (width / height < 0.8){
-    titleOfCard.forEach((title) => {
-        title.style.fontSize = "7vw";
-    })
-
-    titleTop.forEach((title) => {
-        title.style.paddingLeft = "3vw";
-    })
-
-    bigCard.forEach((item) => {
-        item.style.height = "80vh";
-    })
-
-    card.forEach((item) => {
-        item.style.padding = "5vw";
-        item.style.borderRadius = "12vw";
-    })
-
-    imgIcon.forEach((item) => {
-        item.style.width = "20vw";
-    })
 
     imgPicture.forEach((item) => {
         item.style.width = "62vw";
-        item.style.height = "auto";
-        item.style.marginLeft = "auto";
-        item.style.marginRight = "auto";
     })
+
+    phone();
 }
 
 
@@ -165,10 +143,6 @@ function phone(){
 
     titleTop.forEach((title) => {
         title.style.paddingLeft = "3vw";
-    })
-
-    bigCard.forEach((item) => {
-        item.style.height = "65vh";
     })
 
     card.forEach((item) => {
