@@ -97,9 +97,32 @@ function removeActive() {
 
 /* ----------------------- RESPONSIVE CARDS BEGINS --------------------------*/
 
+/* for tablets */
+
 if (width / height < 0.8){
-    
+    titleOfCard.forEach((title) => {
+        title.style.fontSize = "7vw";
+    })
+
+    titleTop.forEach((title) => {
+        title.style.paddingLeft = "3vw";
+    })
+
+    bigCard.forEach((item) => {
+        item.style.height = "80vh";
+    })
+
+    card.forEach((item) => {
+        item.style.padding = "5vw";
+        item.style.borderRadius = "12vw";
+    })
+
+    imgIcon.forEach((item) => {
+        item.style.width = "20vw";
+    })
 }
+
+/* for tablets */
 
 if (width / height < 0.7) {
 
