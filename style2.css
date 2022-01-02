@@ -293,8 +293,27 @@ button a {
 
 /* Pictures */
 
+/* desktop1
 .img-icon {
     width: 10vw;
+    height: auto;
+} */
+
+/* Text */
+/* .title h5 {
+    font-size: 5.5vw;
+}
+
+.img-picture {
+    width: 34vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+.img-icon {
+    width: 7vw;
     height: auto;
 }
 
@@ -304,7 +323,7 @@ button a {
 }
 
 .img-picture {
-    width: 34vw;
+    width: 30vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;

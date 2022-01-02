@@ -152,6 +152,21 @@ if (width / height < 1.4) {
     })
 }
 
+if (width / height < 1.8) {
+
+    imgIcon.forEach((item) => {
+        item.style.width = "7vw";
+    })
+
+    imgPicture.forEach((item) => {
+        item.style.width = "30vw";
+    })
+
+    titleOfCard.forEach((item) => {
+        item.style.width = "5.5vw";
+    })
+}
+
 
 function phone(){
     titleOfCard.forEach((title) => {
