@@ -97,10 +97,29 @@ function removeActive() {
 
 /* ----------------------- RESPONSIVE CARDS BEGINS --------------------------*/
 
-
-
 if (width / height < 0.7) {
 
+    imgPicture.forEach((item) => {
+        item.style.width = "60vw";
+        item.style.height = "auto";
+        item.style.marginLeft = "auto";
+        item.style.marginRight = "auto";
+    })
+}
+
+
+if (width / height < 0.61) {
+
+    imgPicture.forEach((item) => {
+        item.style.width = "65vw";
+        item.style.height = "auto";
+        item.style.marginLeft = "auto";
+        item.style.marginRight = "auto";
+    })
+    phone();
+}
+
+function phone(){
     titleOfCard.forEach((title) => {
         title.style.fontSize = "7vw";
     })
@@ -121,16 +140,7 @@ if (width / height < 0.7) {
     imgIcon.forEach((item) => {
         item.style.width = "20vw";
     })
-
-    imgPicture.forEach((item) => {
-        item.style.width = "65vw";
-        item.style.height = "auto";
-        item.style.marginLeft = "auto";
-        item.style.marginRight = "auto";
-
-    })
 }
-
 
 /* ----------------------- RESPONSIVE CARDS ENDS --------------------------*/
 
