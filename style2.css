@@ -502,7 +502,40 @@ button a {
 
     /* Cards End */
 
+}
 
+@media (min-width: 600px) and (max-width: 1024px) and (min-height: 968px) and (max-height: 1366px){
+    /* Cards Begin */
+
+    .big-card {
+        height:80vh;
+    }
+
+    .card {
+        padding: 5vw;
+        border-radius: 12vw;
+    }
+
+    .title h5 {
+        font-size: 7vw;
+    }
+
+    .title-top {
+        padding-left: 3vw;
+    }
+
+    .img-icon {
+        width: 20vw;
+    }
+
+    .img-picture {
+        width: 65vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Cards End */
 }
 
 
@@ -589,6 +622,36 @@ button a {
     }
     
     /* Title Ends*/
+
+}
+
+
+/* Very small phones */
+
+@media (max-width: 320px) and (max-height: 480px) {
+
+    /* Cards Begin */
+
+    .title h5 {
+        font-size: 5.5vw;
+    }
+
+    .title-top {
+        padding-left: 3vw;
+    }
+
+    .img-icon {
+        width: 15vw;
+    }
+
+    .img-picture {
+        width: 65vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Cards End */
 
 }
 
