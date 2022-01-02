@@ -1,5 +1,17 @@
 // VARIABLES
 
+let width = window.innerWidth;
+let height = window.innerHeight;
+
+// cards
+let bigCard = document.querySelectorAll(".big-card");
+let card = document.querySelectorAll(".card");
+let imgIcon = document.querySelectorAll(".img-icon");
+let imgPicture = document.querySelectorAll(".img-picture");
+let titleTop = document.querySelectorAll(".title-top");
+
+let titleOfCard = document.querySelectorAll(".title-of-card");
+
 // categories
 
 let category1 = document.querySelector(".category1"); // compression
@@ -81,3 +93,44 @@ function removeActive() {
 }
 
 /* ----------------------- SELECT CATEGORIES ENDS --------------------------*/
+
+
+/* ----------------------- RESPONSIVE CARDS BEGINS --------------------------*/
+
+
+
+if (width / height < 0.7) {
+
+    titleOfCard.forEach((title) => {
+        title.style.fontSize = "7vw";
+    })
+
+    titleTop.forEach((title) => {
+        title.style.paddingLeft = "3vw";
+    })
+
+    bigCard.forEach((item) => {
+        item.style.height = "65vh";
+    })
+
+    card.forEach((item) => {
+        item.style.padding = "5vw";
+        item.style.borderRadius = "12vw";
+    })
+
+    imgIcon.forEach((item) => {
+        item.style.width = "20vw";
+    })
+
+    imgPicture.forEach((item) => {
+        item.style.width = "65vw";
+        item.style.height = "auto";
+        item.style.marginLeft = "auto";
+        item.style.marginRight = "auto";
+
+    })
+}
+
+
+/* ----------------------- RESPONSIVE CARDS ENDS --------------------------*/
+
