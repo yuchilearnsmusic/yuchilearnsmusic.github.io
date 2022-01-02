@@ -116,7 +116,7 @@ if (width / height < 0.61) {
 if (width / height < 0.7) {
 
     imgPicture.forEach((item) => {
-        item.style.width = "60vw";
+        item.style.width = "63vw";
         item.style.height = "auto";
         item.style.marginLeft = "auto";
         item.style.marginRight = "auto";
@@ -150,7 +150,7 @@ if (width / height < 0.8){
     })
 
     imgPicture.forEach((item) => {
-        item.style.width = "60vw";
+        item.style.width = "63vw";
         item.style.height = "auto";
         item.style.marginLeft = "auto";
         item.style.marginRight = "auto";
