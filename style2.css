@@ -294,17 +294,17 @@ button a {
 /* Pictures */
 
 .img-icon {
-    width: 6vw;
+    width: 10vw;
     height: auto;
 }
 
 /* Text */
 .title h5 {
-    font-size: 3vw;
+    font-size: 5vw;
 }
 
 .img-picture {
-    width: 22vw;
+    width: 32vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -471,8 +471,8 @@ button a {
     /* Title Ends*/
 
     /* Cards Begin */
-
-    /* .big-card {
+/* 
+    .big-card {
         height:65vh;
     }
 
@@ -503,46 +503,6 @@ button a {
     /* Cards End */
 
 }
-
-/* For Tablets */
-
-@media (aspect-ratio: 3/4){
-    body {
-        background-color: black;
-    }
-    /* Cards Begin */
-
-    .big-card {
-        height:80vh;
-    }
-
-    .card {
-        padding: 5vw;
-        border-radius: 12vw;
-    }
-
-    .title h5 {
-        font-size: 7vw;
-    }
-
-    .title-top {
-        padding-left: 3vw;
-    }
-
-    .img-icon {
-        width: 20vw;
-    }
-
-    .img-picture {
-        width: 65vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Cards End */
-}
-
 
 @media (max-width: 482px) {
 
