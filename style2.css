@@ -490,7 +490,8 @@ button a {
     }
 
     .img-icon {
-        width: 20vw;
+        /* width: 20vw; */
+        max-height: 20%;
     }
 
     .img-picture {
@@ -504,7 +505,12 @@ button a {
 
 }
 
-@media (min-width: 600px) and (max-width: 1024px) and (min-height: 968px) and (max-height: 1366px){
+/* For Tablets */
+
+@media (aspect-ratio: 3/4){
+    body {
+        background-color: black;
+    }
     /* Cards Begin */
 
     .big-card {
