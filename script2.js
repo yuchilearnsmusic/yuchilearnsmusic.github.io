@@ -137,7 +137,7 @@ if (width / height < 0.8){
 
 /* For desktop */
 
-if (width / height < 1.34) {
+if (width / height < 1.4) {
 
     imgIcon.forEach((item) => {
         item.style.width = "10vw";
