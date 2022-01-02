@@ -97,7 +97,35 @@ function removeActive() {
 
 /* ----------------------- RESPONSIVE CARDS BEGINS --------------------------*/
 
-/* for tablets */
+
+
+
+if (width / height < 0.61) {
+
+    imgPicture.forEach((item) => {
+        item.style.width = "65vw";
+        item.style.height = "auto";
+        item.style.marginLeft = "auto";
+        item.style.marginRight = "auto";
+    })
+    phone();
+}
+
+/* for longer tablets */
+
+if (width / height < 0.7) {
+
+    imgPicture.forEach((item) => {
+        item.style.width = "60vw";
+        item.style.height = "auto";
+        item.style.marginLeft = "auto";
+        item.style.marginRight = "auto";
+    })
+
+    phone();
+}
+
+/* for shorter tablets */
 
 if (width / height < 0.8){
     titleOfCard.forEach((title) => {
@@ -122,31 +150,6 @@ if (width / height < 0.8){
     })
 }
 
-/* for tablets */
-
-if (width / height < 0.7) {
-
-    imgPicture.forEach((item) => {
-        item.style.width = "60vw";
-        item.style.height = "auto";
-        item.style.marginLeft = "auto";
-        item.style.marginRight = "auto";
-    })
-
-    phone();
-}
-
-
-if (width / height < 0.61) {
-
-    imgPicture.forEach((item) => {
-        item.style.width = "65vw";
-        item.style.height = "auto";
-        item.style.marginLeft = "auto";
-        item.style.marginRight = "auto";
-    })
-    phone();
-}
 
 function phone(){
     titleOfCard.forEach((title) => {
