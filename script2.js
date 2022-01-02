@@ -148,6 +148,13 @@ if (width / height < 0.8){
     imgIcon.forEach((item) => {
         item.style.width = "20vw";
     })
+
+    imgPicture.forEach((item) => {
+        item.style.width = "60vw";
+        item.style.height = "auto";
+        item.style.marginLeft = "auto";
+        item.style.marginRight = "auto";
+    })
 }
 
 
