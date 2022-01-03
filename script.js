@@ -135,6 +135,23 @@ if (width / height < 0.8){
     phone();
 }
 
+/* For desktop */
+
+// if (width / height < 1.4) {
+
+//     imgIcon.forEach((item) => {
+//         item.style.width = "10vw";
+//     })
+
+//     imgPicture.forEach((item) => {
+//         item.style.width = "34vw";
+//     })
+
+//     titleOfCard.forEach((item) => {
+//         item.style.width = "5.5vw";
+//     })
+// }
+
 
 function phone(){
     titleOfCard.forEach((title) => {

@@ -132,6 +132,10 @@ if (width / height < 0.8){
         item.style.width = "62vw";
     })
 
+    bigCard.forEach((item) => {
+        item.style.height = "60vh";
+    })
+
     phone();
 }
 
