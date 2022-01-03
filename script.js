@@ -129,7 +129,7 @@ if (width / height < 0.7) {
 if (width / height < 0.8){
 
     imgPicture.forEach((item) => {
-        item.style.width = "62vw";
+        item.style.width = "60vw";
     })
 
     phone();
