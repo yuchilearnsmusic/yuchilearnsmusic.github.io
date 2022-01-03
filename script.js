@@ -124,6 +124,7 @@ if (width / height < 0.7) {
     phone();
 }
 
+
 /* for shorter tablets */
 
 if (width / height < 0.8){
@@ -133,6 +134,20 @@ if (width / height < 0.8){
     })
 
     phone();
+}
+
+if (width / height < 1.4) {
+    titleOfCard.forEach((title) => {
+        title.style.fontSize = "5.5vw";
+    })
+
+    imgPicture.forEach((item) => {
+        item.style.width = "34vw";
+    })
+
+    imgIcon.forEach((item) => {
+        item.style.width = "10vw";
+    })
 }
 
 /* For desktop */
