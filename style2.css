@@ -15,7 +15,7 @@ body {
 
 p {
     font-family: "Spline Sans";
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
 }
 
@@ -295,6 +295,9 @@ button a {
     display: flex;
     align-items: center;
     width: 100%;
+}
+
+.row-bottom {
     justify-content: space-between;
 }
 
@@ -314,6 +317,10 @@ button a {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+.img-full-circle {
+    width: 20vw;
 }
 
 
