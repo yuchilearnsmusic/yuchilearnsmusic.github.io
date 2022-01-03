@@ -111,7 +111,7 @@ if (width / height < 0.61) {
     })
 
     phone();
-}
+} else
 
 /* for longer tablets */
 
@@ -122,7 +122,7 @@ if (width / height < 0.7) {
     })
 
     phone();
-}
+} else
 
 
 /* for shorter tablets */
@@ -134,7 +134,7 @@ if (width / height < 0.8){
     })
 
     phone();
-}
+} else
 
 if (width / height < 1.4) {
     titleOfCard.forEach((title) => {
@@ -148,7 +148,24 @@ if (width / height < 1.4) {
     imgIcon.forEach((item) => {
         item.style.width = "10vw";
     })
+} else
+
+
+if (width / height < 1.8) {
+    titleOfCard.forEach((title) => {
+        title.style.fontSize = "3.75vw";
+    })
+
+    imgPicture.forEach((item) => {
+        item.style.width = "28vw";
+    })
+
+    imgIcon.forEach((item) => {
+        item.style.width = "8.5vw";
+    })
 }
+
+
 
 /* For desktop */
 

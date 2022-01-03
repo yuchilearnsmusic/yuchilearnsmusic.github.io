@@ -294,16 +294,16 @@ button a {
 /* Pictures */
 
 .img-icon {
-    /* width: 10vw; */
+    width: 8.5vw;
     height: auto;
 }
 
 .title h5 {
-    /* font-size: 5.5vw; */
+    font-size: 3.75vw;
 }
 
 .img-picture {
-    /* width: 34vw; */
+    width: 28vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
