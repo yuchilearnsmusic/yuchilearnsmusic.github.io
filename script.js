@@ -181,6 +181,7 @@ else if (width / height < 1.81) {
 
 
 
+
 /* For desktop */
 
 // if (width / height < 1.4) {

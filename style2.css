@@ -294,39 +294,20 @@ button a {
 /* Pictures */
 
 .img-icon {
-    width: 8.5vw;
+    width: 6.5vw; /* for width / height > 2.1 */
     height: auto;
 }
 
 .title h5 {
-    font-size: 3.75vw;
+    font-size: 3vw; /* for width / height > 2.1 */
 }
 
 .img-picture {
-    width: 28vw;
+    width: 24vw; /* for width / height > 2.1 */
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-/* .img-icon {
-    width: 7vw;
-    height: auto;
-}
-*/
-
-/* Text */
-/* .title h5 {
-    font-size: 5.5vw;
-}
-
-.img-picture {
-    width: 30vw;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 
 
