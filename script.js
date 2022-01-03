@@ -1,92 +1,158 @@
-// navigation boxes
-let navElem1 = document.querySelector(".nav-elem1"); // compression
-let navElem2 = document.querySelector(".nav-elem2"); // eq
-let navElem3 = document.querySelector(".nav-elem3"); // reverb
+// VARIABLES
 
-let navElem = [navElem1, navElem2, navElem3];
+let width = window.innerWidth;
+let height = window.innerHeight;
+
+// cards
+let bigCard = document.querySelectorAll(".big-card");
+let card = document.querySelectorAll(".card");
+let imgIcon = document.querySelectorAll(".img-icon");
+let imgPicture = document.querySelectorAll(".img-picture");
+let titleTop = document.querySelectorAll(".title-top");
+
+let titleOfCard = document.querySelectorAll(".title-of-card");
+
+// categories
+
+let category1 = document.querySelector(".category1"); // compression
+let category2 = document.querySelector(".category2"); // eq
+let category3 = document.querySelector(".category3"); // reverb
 
 let active = document.querySelector("active")
 
-let compression = document.querySelector(".compression-courses");
+let compressionCourses = document.querySelector(".compression-courses");
 
-let hide = document.querySelector(".hide"); // hide div
+// navigation items
 
-let menu = document.querySelector(".menu"); // hamburger menu
+let menu = document.querySelector(".img-menu"); // hamburger menu
+let close = document.querySelector(".img-close"); // hamburger menu
 
-let close = document.querySelector(".close"); // close menu button
+// learn pop-up
 
-let navigation = document.querySelector(".mobile-nav") // the navigation page
+let learn = document.querySelector(".learn");
 
-let title = document.querySelector(".title-card")
+// content of the page
 
+let titleCard = document.querySelector(".title-card")
 let content = document.querySelector(".content")
-
 let footer = document.querySelector(".footer")
 
+// hide
 
-// navElem3.addEventListener("click", console.log("hi"))
+let hide = document.querySelector(".hide")
 
-// equivalent of 'onclick'
-
-// for (let elem in navElem){
-//     elem.addEventListener("click", addActive(elem));
-// }
-
-// function addActive(elem){
-//     console.log("hi");
-//     // remove active from the other boxes
-//     for (i = 0; i < navElem.length; i++){
-//         navElem[i].classList.remove("active")
-//     }
-
-//     // add active to the chosen box
-//     elem.classList.add("active");
-// }
+/* ----------------------- OPEN AND CLOSE MENU BEGINS -----------------------*/
 
 menu.onclick = function(){
-    menu.style.display = "none";
-    title.style.display = "none";
-    content.style.display = "none";
-    footer.style.display = "none";
-    close.style.display = "block";
-    navigation.style.display = "flex";
+    menu.classList.add("hide");
+    close.classList.remove("hide");
+    learn.classList.remove("hide");
 
+    // hide content of the page
+
+    // titleCard.style.display = "none"
+    // content.style.display = "none"
+    // footer.style.display = "none"
 }
-
-// UP TO HERE
 
 close.onclick = function(){
-    navigation.style.display = "none";
-    close.style.display = "none";
-    menu.style.display = "block";
-    title.style.display = "flex";
-    content.style.display = "flex";
-    footer.style.display = "flex";
+    menu.classList.remove("hide");
+    close.classList.add("hide");
+    learn.classList.add("hide");
+
+    // titleCard.style.display = "flex";
+    // content.style.display = "flex";
+    // footer.style.display = "flex";
 }
 
+/* ----------------------- OPEN AND CLOSE MENU ENDS -----------------------*/
 
-// NAVIGATION BEGINS
 
-navElem1.onclick = function(){
+/* ----------------------- SELECT CATEGORIES BEGINS -----------------------*/
+
+category1.onclick = function(){
     removeActive();
-    navElem1.classList.add("active");
-    compression.classList.remove("hide")
+    category1.classList.add("active");
+    compressionCourses.classList.remove("hide")
 }
-navElem2.onclick = function(){
+category2.onclick = function(){
     removeActive();
-    compression.classList.add("hide");
-    navElem2.classList.add("active");
+    compressionCourses.classList.add("hide");
+    category2.classList.add("active");
 }
-navElem3.onclick = function(){
+category3.onclick = function(){
     removeActive();
-    navElem3.classList.add("active");
+    category3.classList.add("active");
 }
 
 
 function removeActive() {
-    navElem1.classList.remove("active");
-    navElem2.classList.remove("active");
-    navElem3.classList.remove("active");
+    category1.classList.remove("active");
+    category2.classList.remove("active");
+    category3.classList.remove("active");
 }
 
-// NAVIGATION ENDS
+/* ----------------------- SELECT CATEGORIES ENDS --------------------------*/
+
+
+/* ----------------------- RESPONSIVE CARDS BEGINS --------------------------*/
+
+
+
+
+if (width / height < 0.61) {
+
+    imgPicture.forEach((item) => {
+        item.style.width = "65vw";
+    })
+
+    bigCard.forEach((item) => {
+        item.style.height = "65vh";
+    })
+
+    phone();
+}
+
+/* for longer tablets */
+
+if (width / height < 0.7) {
+
+    imgPicture.forEach((item) => {
+        item.style.width = "63vw";
+    })
+
+    phone();
+}
+
+/* for shorter tablets */
+
+if (width / height < 0.8){
+
+    imgPicture.forEach((item) => {
+        item.style.width = "62vw";
+    })
+
+    phone();
+}
+
+
+function phone(){
+    titleOfCard.forEach((title) => {
+        title.style.fontSize = "7vw";
+    })
+
+    titleTop.forEach((title) => {
+        title.style.paddingLeft = "3vw";
+    })
+
+    card.forEach((item) => {
+        item.style.padding = "5vw";
+        item.style.borderRadius = "12vw";
+    })
+
+    imgIcon.forEach((item) => {
+        item.style.width = "20vw";
+    })
+}
+
+/* ----------------------- RESPONSIVE CARDS ENDS --------------------------*/
