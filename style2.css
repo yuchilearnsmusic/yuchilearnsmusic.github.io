@@ -207,6 +207,8 @@ header {
     box-shadow: 0 6px 10px 0px rgba(255, 121, 89, 0.2), 0 12px 20px 0 rgba(255, 121, 89, 0.19);
 }
 
+
+
 /* Title Image */
 
 .title-image-holder {
@@ -222,6 +224,8 @@ header {
     height: auto;
     width: 35vw;
 }
+
+
 
 /* Title Text */
 
@@ -243,6 +247,7 @@ button {
     font-family: "Balsamiq Sans";
     margin-top: 3vh;
     cursor: pointer;
+    width: 30vw;
 }
 
 button a {
@@ -250,6 +255,7 @@ button a {
     text-decoration: none;
 
 }
+
 
 
 /* ------------------------ TITLE ENDS ----------------------------*/
@@ -341,24 +347,41 @@ button a {
 }
 
 
+
 /* ------------------------ CONTENT ENDS --------------------------*/
 
+/* ------------------------ FOOTER BEGINS --------------------------*/
+
+footer {
+    height: 10vh;
+    width:100%;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.75%;
+}
+
+.logo {
+    height: 100%;
+}
+
+/* .footer-message {
+    text-align: center;
+    font-size: 10vw;
+} */
+
+.instagram{
+    height: 10vh;
+}
+
+/* ------------------------ FOOTER BEGINS --------------------------*/
 
 
 /* ------------------------------ Learn Ends ------------------------------- */
 
 
 @media (min-width: 482px) {
-
-    /* Universal Begins*/
-
-    h6 {
-        font-size: 2vw;
-        font-weight: 50;
-        text-align: center;
-    }
-
-    /* Universal Ends*/
 
     /* Mobile Only Begins */
 
@@ -408,6 +431,8 @@ button a {
 
 }
 
+/* Media Queries */
+
 @media (orientation: landscape) {
     .icon, .empty {
         width: 10vw;
@@ -415,8 +440,7 @@ button a {
 }
 
 
-@media (max-width: 1601px) and (orientation: portrait) {
-
+@media (orientation: portrait) {
     .mobile {
         display:block;
     }
@@ -452,172 +476,12 @@ button a {
 
     /* Header Ends */
 
-    /* Title Begins*/
-
-    .title-card{
-        margin-top: 10vh;
-        flex-direction: column;
-    }
-
-
-    .title-image-holder {
-        height: 60%;
-        width: 100%;
-        padding: 0 4vw;
-    }
-    
-    .img-title {
-        height: auto;
-        width: 100%;
-        /* position: relative;
-        bottom: -7%; */
-    }
-    
-    /* Title Text */
-    
-    .title-text{
-        width: 100%;
-        height: 20%;
-        line-height: 6vh;
-        padding-top: 3vw;
-        text-align: center;
-    }
-
-    .title-text h4{
-        font-size: 13vw;
-    }
-    
-    .title-text h5 {
-        font-size: 6.5vw;
-    }
-
-    button {
-        font-size: 4vw;
-        padding: 1.5vw 6vw;
-
-    }
-    
-    /* Title Ends*/
-
-    /* Cards Begin */
-/* 
-    .big-card {
-        height:65vh;
-    }
-
-    .card {
-        padding: 5vw;
-        border-radius: 12vw;
-    }
-
-    .title h5 {
-        font-size: 7vw;
-    }
-
-    .title-top {
-        padding-left: 3vw;
-    }
-
-    .img-icon {
-        width: 20vw;
-    }
-
-    .img-picture {
-        width: 65vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-
-    /* Cards End */
-
 }
 
-@media (max-width: 482px) {
-
-    .mobile {
-        display:block;
-    }
-
-    .computer {
-        display:none;
-    }
-
-    /* Header Begins */
-
-    header {
-        padding:1% 0;
-    }
-
-    .img-menu {
-        height:65%;
-        width:auto;
-        margin-right: 5vw;
-    }
-
-    .img-close {
-        height:80%;
-        width:auto;
-        margin-right: 5vw;
-        display: flex;
-    }
-
-    .course-slot {
-        width: 42vw;
-        border-radius: 0;
-        box-shadow: none;
-    }
-
-    /* Header Ends */
-
-    /* Title Begins*/
-
-    .title-card{
-        margin-top: 10vh;
-        flex-direction: column;
-    }
 
 
-    .title-image-holder {
-        height: 60%;
-        width: 100%;
-        padding: 0 4vw;
-    }
-    
-    .img-title {
-        height: auto;
-        width: 100%;
-        /* position: relative;
-        bottom: -7%; */
-    }
-    
-    /* Title Text */
-    
-    .title-text{
-        width: 100%;
-        height: 20%;
-        line-height: 6vh;
-        padding-top: 3vw;
-        text-align: center;
-    }
 
-    .title-text h4{
-        font-size: 13vw;
-    }
-    
-    .title-text h5 {
-        font-size: 6.5vw;
-    }
 
-    button {
-        font-size: 4vw;
-        padding: 1.5vw 6vw;
-
-    }
-    
-    /* Title Ends*/
-
-}
 
 
 /* Hide (has to go at the end so it can override other styles) */

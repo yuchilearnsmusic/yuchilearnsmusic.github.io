@@ -3,6 +3,17 @@
 let width = window.innerWidth;
 let height = window.innerHeight;
 
+// title card
+
+
+let titleTextContainer = document.querySelector(".title-text");
+let titleHeadingSmall = document.querySelector(".title-heading-small");
+let titleHeadingBig = document.querySelector(".title-heading-big");
+let titleImage = document.querySelector(".img-title");
+let button = document.querySelector(".button");
+
+
+
 // cards
 let bigCard = document.querySelectorAll(".big-card");
 let card = document.querySelectorAll(".card");
@@ -109,6 +120,22 @@ console.log(width / height);
 
 if (width / height < 0.61) {
 
+    /* Title Card Begins */
+    titleCardPortrait();
+
+    titleCard.style.height = "75vh";
+
+    
+    titleImage.style.marginTop = "10vh";
+    titleImage.style.width = "75vw";
+
+    titleHeadingSmall.style.fontSize = "9vw";
+
+    titleHeadingBig.style.fontSize = "12vw";
+    titleHeadingBig.style.marginTop = "3vh";
+
+    /* Title Card Ends */
+
     /* Big Card Begins */
 
     imgPicture.forEach((item) => {
@@ -143,6 +170,20 @@ if (width / height < 0.61) {
 
 else if (width / height < 0.7) {
 
+    /* Title Card Begins */
+
+    titleCardPortrait();
+    titleCard.style.height = "80vh";
+
+    titleImage.style.marginTop = "5vh";
+    titleImage.style.width = "75vw";
+
+    titleHeadingSmall.style.fontSize = "7vw";
+    titleHeadingBig.style.fontSize = "9vw";
+
+
+    /* Title Card Ends */
+
     imgPicture.forEach((item) => {
         item.style.width = "57vw";
     })
@@ -169,6 +210,21 @@ else if (width / height < 0.7) {
 /* for shorter tablets */
 
 else if (width / height < 0.8){
+
+    /* Title Card Begins */
+
+    titleCardPortrait();
+
+    titleCard.style.height = "90vh";
+    
+    titleImage.style.marginTop = "5vh";
+    titleImage.style.width = "75vw";
+
+    titleHeadingSmall.style.fontSize = "7vw";
+    titleHeadingBig.style.fontSize = "9vw";
+
+
+    /* Title Card Ends */
 
     imgPicture.forEach((item) => {
         item.style.width = "48vw";
@@ -197,6 +253,21 @@ else if (width / height < 0.8){
 
 else if (width / height < 1) {
 
+    /* Title Card Begins */
+
+    titleCardPortrait();
+
+    titleCard.style.height = "90vh";
+    
+    titleImage.style.marginTop = "5vh";
+    titleImage.style.width = "55vw";
+
+    titleHeadingSmall.style.fontSize = "7vw";
+    titleHeadingBig.style.fontSize = "9vw";
+
+
+    /* Title Card Ends */
+
     imgPicture.forEach((item) => {
         item.style.width = "34vw";
     })
@@ -220,9 +291,15 @@ else if (width / height < 1) {
 
 } 
 
-// UP TO HERE
 
 else if (width / height < 1.3) {
+
+    titleImage.style.width = "45vw";
+    titleHeadingSmall.style.fontSize = "5vw";
+
+    titleHeadingBig.style.fontSize = "5vw";
+
+
     phone();
     titleOfCard.forEach((title) => {
         title.style.fontSize = "4.5vw";
@@ -268,6 +345,8 @@ else if (width / height < 1.3) {
 } 
 
 else if (width / height < 1.4) {
+
+
     phone();
     titleOfCard.forEach((title) => {
         title.style.fontSize = "5vw";
@@ -448,25 +527,87 @@ else if (width / height < 1.81) {
     })
 }
 
+else if (width / height > 1.81) {
+    phone();
+
+    bigCard.forEach((item) => {
+        item.style.height = "80vh";
+    })
+
+    titleOfCard.forEach((title) => {
+        title.style.fontSize = "3.75vw";
+    })
+
+    imgPicture.forEach((item) => {
+        item.style.width = "20vw";
+    })
+
+    imgIcon.forEach((item) => {
+        item.style.width = "7vw";
+    })
+
+    imageFullCircle.forEach((item) => {
+        item.style.width = "18vw";
+    })
+
+    description.forEach((item) => {
+        item.style.fontSize = "1.5vw";
+    })
+
+    /* small cards */
+
+    smallCardTitle.forEach((title) => {
+        title.style.fontSize = "1.75vw";        
+    })
+
+    smallTitleTop.forEach((title) => {
+        title.style.paddingLeft = "0";        
+    })
+    
+    smallCardImage.forEach((item) => {
+        item.style.width = "16vw";
+    })
+
+    thirdCard.forEach((item) => {
+        item.style.height = "60vh";
+        item.style.maxWidth = "42vw";
+        item.style.borderRadius = "8vw";
+        
+    })
+
+    card.forEach((item) => {
+        item.style.padding = "2vw";
+        item.style.borderRadius = "7vw";
+    })
+
+    thirdCard.forEach((item) => {
+        item.style.height = "70vh";
+        item.style.maxWidth = "42vw";
+        item.style.borderRadius = "6vw";
+    })
+
+    smallCardIcon.forEach((item) => {
+        item.style.width = "6vw";
+    })
+}
 
 
 
-/* For desktop */
+function titleCardPortrait() {
+    titleCard.style.flexDirection = "column";
 
-// if (width / height < 1.4) {
+    titleTextContainer.style.display = "flex";
+    titleTextContainer.style.flexDirection = "column";
+    titleTextContainer.style.alignItems = "center";
+    titleTextContainer.style.width = "100%";
+    titleTextContainer.style.paddingTop = "3vh";
 
-//     imgIcon.forEach((item) => {
-//         item.style.width = "10vw";
-//     })
-
-//     imgPicture.forEach((item) => {
-//         item.style.width = "34vw";
-//     })
-
-//     titleOfCard.forEach((item) => {
-//         item.style.width = "5.5vw";
-//     })
-// }
+    titleHeadingBig.style.marginTop = "2vh";
+    
+    button.style.padding = "1.5vw 4vw";
+    button.style.fontSize = "3vw";
+    button.style.width = "40vw";
+}
 
 
 function phone(){
