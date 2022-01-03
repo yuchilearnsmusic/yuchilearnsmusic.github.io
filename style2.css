@@ -285,8 +285,14 @@ button a {
     overflow:hidden;
 }
 
-.big-card {
-    height: 80vh;
+.big-card, .third-card {
+    height: 65vh;
+}
+
+.row-of-three {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Layout of cards */
@@ -303,10 +309,21 @@ button a {
 
 /* Pictures */
 
+.icon {
+    display: flex;
+    justify-content: end;
+}
+
+.icon-top {
+    display: flex;
+    justify-content: start;
+}
+
 .img-icon {
     width: 6.5vw; /* for width / height > 2.1 */
     height: auto;
 }
+
 
 .title h5 {
     font-size: 3vw; /* for width / height > 2.1 */
@@ -322,7 +339,6 @@ button a {
 .img-full-circle {
     width: 20vw;
 }
-
 
 
 /* ------------------------ CONTENT ENDS --------------------------*/
@@ -600,36 +616,6 @@ button a {
     }
     
     /* Title Ends*/
-
-}
-
-
-/* Very small phones */
-
-@media (max-width: 320px) and (max-height: 480px) {
-
-    /* Cards Begin */
-
-    .title h5 {
-        font-size: 5.5vw;
-    }
-
-    .title-top {
-        padding-left: 3vw;
-    }
-
-    .img-icon {
-        width: 15vw;
-    }
-
-    .img-picture {
-        width: 65vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Cards End */
 
 }
 
