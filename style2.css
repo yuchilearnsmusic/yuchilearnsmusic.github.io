@@ -10,6 +10,12 @@ body {
     font-family: "Lilita One";
     font-size: 4vw;
     color: white;
+    font-weight: 100;
+}
+
+p {
+    font-family: "Spline Sans";
+    font-size: 3vw;
 }
 
 /* Headings */
