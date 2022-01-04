@@ -81,3 +81,5 @@ function removeActive() {
 }
 
 /* ----------------------- SELECT CATEGORIES ENDS --------------------------*/
+
+console.log(window.innerWidth / window.innerHeight)

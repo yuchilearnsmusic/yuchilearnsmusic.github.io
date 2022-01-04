@@ -309,13 +309,14 @@ button a {
 
 .row {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.row-bottom {
-    justify-content: space-between;
-}
+/* .row-bottom {
+    justify-content: end;
+} */
 
 /* Pictures */
 
@@ -344,6 +345,11 @@ button a {
 
 .img-full-circle {
     width: 20vw;
+}
+
+.text-bottom-card {
+    font-family: "Balsamiq Sans";
+    font-weight: 100;
 }
 
 
@@ -560,10 +566,6 @@ footer {
 
     /* Big Card Begins */
 
-    /* .img-picture, .big-card, .third-card {
-        width: 65vw;
-    } */
-
     .img-picture {
         width: 65vw;
     }
@@ -596,6 +598,28 @@ footer {
     }
 
     /* Big Card Ends */
+
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 72vw;
+    }
+
+    .img-bottom-card {
+        height: 45vh;
+        padding: 5vh 5vw 0 5vw;
+    }
+
+    .text-bottom-card {
+        font-size: 5vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
+
+    .small-description-text {
+        font-size: 3vw;
+    }
+
 }
 
 /* for tablets */
@@ -673,6 +697,28 @@ footer {
     }
 
     /* Big Card Ends */
+
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 72vw;
+    }
+
+    .img-bottom-card {
+        height: 45vh;
+        padding: 5vh 5vw 0 5vw;
+    }
+
+    .text-bottom-card {
+        font-size: 4vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
+
+    .small-description-text {
+        font-size: 3vw;
+    }
+
 }
 
 /* for longer tablets */
@@ -750,6 +796,27 @@ footer {
     }
 
     /* Big Card Ends */
+
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 72vw;
+    }
+
+    .img-bottom-card {
+        height: 55vh;
+        padding: 5vh 5vw 0 5vw;
+    }
+
+    .text-bottom-card {
+        font-size: 4vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
+
+    .small-description-text {
+        font-size: 3vw;
+    }
 }
 
 /* shorter tablets */
@@ -827,6 +894,27 @@ footer {
     }
 
     /* Big Card Ends */
+
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 72vw;
+    }
+
+    .img-bottom-card {
+        height: 65vh;
+        padding: 5vh 5vw 0 5vw;
+    }
+
+    .text-bottom-card {
+        font-size: 4vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
+
+    .small-description-text {
+        font-size: 3vw;
+    }
 }
 
 /* laptops */
@@ -920,6 +1008,10 @@ footer {
         border-radius: 8vw;
     }
 
+    .small-description-text {
+        font-size: 2vw;
+    }
+
     /* Small Cards Ends*/
 
     /* Footer Begins */
@@ -936,6 +1028,22 @@ footer {
 
     /* Footer Ends */
 
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 52vw;
+    }
+
+    .img-bottom-card {
+        height: 55vh;
+        padding: 5vh 5vw 0 5vw;
+    }
+
+    .text-bottom-card {
+        font-size: 2vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
 
 }
 
@@ -1037,6 +1145,10 @@ footer {
         width: 8vw;
     }
 
+    .small-description-text {
+        font-size: 1.75vw;
+    }
+
     /* Small Cards Ends*/
 
     /* Footer Begins */
@@ -1053,6 +1165,22 @@ footer {
 
     /* Footer Ends */
 
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 48vw;
+    }
+
+    .img-bottom-card {
+        height: 55vh;
+        padding: 5vh 5vw 0 5vw;
+    }
+
+    .text-bottom-card {
+        font-size: 2vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
 
 }
 
@@ -1157,6 +1285,10 @@ footer {
         padding-left: 0;
     }
 
+    .small-description-text {
+        font-size: 1.75vw;
+    }
+
     /* Small Cards Ends*/
 
     /* Footer Begins */
@@ -1172,6 +1304,24 @@ footer {
     }
 
     /* Footer Ends */
+
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 35vw;
+    }
+
+    .img-bottom-card {
+        height: 55vh;
+        padding: 5vh 5vw 0 5vw;
+        width: 50vw;
+    }
+
+    .text-bottom-card {
+        font-size: 2vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
 
 }
 
@@ -1264,6 +1414,24 @@ footer {
 
     /* Footer Ends */
 
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 35vw;
+    }
+
+    .img-bottom-card {
+        height: 55vh;
+        padding: 5vh 5vw 0 5vw;
+        width: 50vw;
+    }
+
+    .text-bottom-card {
+        font-size: 2vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
+
 }
 
 
@@ -1355,5 +1523,23 @@ footer {
     }
 
     /* Footer Ends */
+
+    /* Card w/ Image At the Bottom Begins */
+
+    .img-bottom {
+        width: 30vw;
+    }
+
+    .img-bottom-card {
+        height: 55vh;
+        padding: 5vh 5vw 0 5vw;
+        width: 50vw;
+    }
+
+    .text-bottom-card {
+        font-size: 1.5vw;
+    }
+
+    /* Card w/ Image At the Bottom Ends */
 
 }
