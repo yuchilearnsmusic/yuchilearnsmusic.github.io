@@ -1,42 +1,5 @@
 // VARIABLES
 
-let width = window.innerWidth;
-let height = window.innerHeight;
-
-// title card
-
-
-let titleTextContainer = document.querySelector(".title-text");
-let titleHeadingSmall = document.querySelector(".title-heading-small");
-let titleHeadingBig = document.querySelector(".title-heading-big");
-let titleImage = document.querySelector(".img-title");
-let button = document.querySelector(".button");
-
-
-
-// cards
-let bigCard = document.querySelectorAll(".big-card");
-let card = document.querySelectorAll(".card");
-let imgIcon = document.querySelectorAll(".img-icon");
-let smallCardIcon = document.querySelectorAll(".small-card-icon");
-let imgPicture = document.querySelectorAll(".img-picture");
-let smallCardImage = document.querySelectorAll(".small-card-image");
-let titleTop = document.querySelectorAll(".title-top");
-let imageFullCircle = document.querySelectorAll(".img-full-circle");
-let description = document.querySelectorAll(".description-text");
-
-let titleOfCard = document.querySelectorAll(".title-of-card");
-let smallTitleTop = document.querySelectorAll(".small-title-top");
-let smallCardTitle = document.querySelectorAll(".small-card-title");
-
-let thirdCard = document.querySelectorAll(".third-card");
-let bottomImageCard = document.querySelectorAll(".bottom-image-card");
-
-// footer
-let footerMessage = document.querySelectorAll(".footer-message")
-
-
-
 // categories
 
 let category1 = document.querySelector(".category1"); // compression
