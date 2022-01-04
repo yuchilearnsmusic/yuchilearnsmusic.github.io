@@ -15,7 +15,7 @@ body {
 
 p {
     font-family: "Spline Sans";
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;
 }
 
@@ -295,10 +295,14 @@ button a {
     height: 65vh;
 }
 
-.row-of-three {
+.row-of-three, .row-of-two {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.row-of-two {
+    width: 100%;
 }
 
 /* Layout of cards */
@@ -353,26 +357,28 @@ button a {
 /* ------------------------ FOOTER BEGINS --------------------------*/
 
 footer {
-    height: 10vh;
+    height: 35vh;
     width:100%;
     display: flex;
+    flex-direction: column;
 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 0.75%;
 }
 
 .logo {
-    height: 100%;
+    height: 12vh;
+    padding-bottom: 1vh;
 }
 
-/* .footer-message {
-    text-align: center;
-    font-size: 10vw;
-} */
-
 .instagram{
-    height: 10vh;
+    padding-top: 2vh;
+    height: 6vh;
+}
+
+.footer-message {
+    font-size: 2vw;
 }
 
 /* ------------------------ FOOTER BEGINS --------------------------*/
@@ -434,8 +440,18 @@ footer {
 /* Media Queries */
 
 @media (orientation: landscape) {
+    /* Universal */
+
+    p {
+        font-size: 1.5vw;
+    }
+
     .icon, .empty {
         width: 10vw;
+    }
+
+    .instagram {
+        height: 7vh;
     }
 }
 
@@ -488,4 +504,8 @@ footer {
 
 .hide {
     display: none;
+}
+
+.red-words {
+    color: #FF854D;
 }

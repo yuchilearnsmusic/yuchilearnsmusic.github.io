@@ -30,6 +30,12 @@ let smallTitleTop = document.querySelectorAll(".small-title-top");
 let smallCardTitle = document.querySelectorAll(".small-card-title");
 
 let thirdCard = document.querySelectorAll(".third-card");
+let bottomImageCard = document.querySelectorAll(".bottom-image-card");
+
+// footer
+let footerMessage = document.querySelectorAll(".footer-message")
+
+
 
 // categories
 
@@ -288,9 +294,7 @@ else if (width / height < 1) {
     imageFullCircle.forEach((item) => {
         item.style.width = "30vw";
     })
-
 } 
-
 
 else if (width / height < 1.3) {
 
@@ -335,14 +339,16 @@ else if (width / height < 1.3) {
         item.style.height = "60vh";
         item.style.maxWidth = "42vw";
         item.style.borderRadius = "8vw";
-        
     })
 
     card.forEach((item) => {
         item.style.padding = "3vw";
         item.style.borderRadius = "7vw";
     })
-} 
+
+    // footer
+
+    footerLandscape();} 
 
 else if (width / height < 1.4) {
 
@@ -398,7 +404,7 @@ else if (width / height < 1.4) {
         item.style.width = "8vw";
     })
 
-
+    footerLandscape();
 } 
 
 else if (width / height < 1.71) {
@@ -461,6 +467,8 @@ else if (width / height < 1.71) {
     smallTitleTop.forEach((title) => {
         title.style.paddingLeft = "0";        
     })
+
+    footerLandscape();
 }
 
 else if (width / height < 1.81) {
@@ -525,6 +533,13 @@ else if (width / height < 1.81) {
     smallCardIcon.forEach((item) => {
         item.style.width = "6vw";
     })
+
+    footerLandscape();
+
+    footerMessage.forEach((item) => {
+        item.style.fontSize = "1vw"
+    })
+
 }
 
 else if (width / height > 1.81) {
@@ -589,6 +604,12 @@ else if (width / height > 1.81) {
     smallCardIcon.forEach((item) => {
         item.style.width = "6vw";
     })
+
+    footerLandscape();
+    footerMessage.forEach((item) => {
+        item.style.fontSize = "1vw"
+    })
+
 }
 
 
@@ -626,6 +647,22 @@ function phone(){
 
     imgIcon.forEach((item) => {
         item.style.width = "20vw";
+    })
+}
+
+function footerLandscape() {
+        footer.style.justifyContent = "space-around";
+        footer.style.flexDirection = "row";
+        footer.style.height = "20vh";
+
+        footerMessage.forEach((item) => {
+            item.style.fontSize = "1.5vw"
+        })
+}
+
+function bottomImageCardStyle() {
+    bottomImageCard.forEach((item) => {
+        item.style.padding = "3vw 3vw 0 3vw";
     })
 }
 
