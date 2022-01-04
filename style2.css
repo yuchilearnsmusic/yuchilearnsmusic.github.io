@@ -540,7 +540,7 @@ footer {
     }
 
     
-    titleImage.style.marginTop = "10vh";
+    /* titleImage.style.marginTop = "10vh";
     titleImage.style.width = "75vw";
 
     titleHeadingSmall.style.fontSize = "9vw";
@@ -552,7 +552,7 @@ footer {
 
     /* Big Card Begins */
 
-    imgPicture.forEach((item) => {
+    /* imgPicture.forEach((item) => {
         item.style.width = "65vw";
     })
 
@@ -572,7 +572,7 @@ footer {
         item.style.fontSize = "3vw";
     })
 
-    phone();
+    phone(); */
 
     /* Big Card Ends */
 }
