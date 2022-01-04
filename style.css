@@ -66,6 +66,15 @@ h5 {
     background-color: #FF854D;
 }
 
+
+.green-font {
+    color: #92D050;
+}
+
+.red-font {
+    color: #FF854D;
+}
+
 /* ----------------------- Universal Styles Ends --------------------------- */
 
 /* --------------------------- Header Begins ------------------------------- */
@@ -352,6 +361,56 @@ button a {
     font-weight: 100;
 }
 
+.small-card-title {
+    text-align: center;
+}
+
+.full-image {
+    max-height: 100%;;
+}
+
+/* Next Module Card Begins */
+
+.next-card {
+    display: flex;
+    align-items: center;
+}
+
+.next-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEFAD;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+    width: 30vw;
+}
+
+.next {
+    text-decoration: none;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.arrow {
+    height: 3vw;
+}
+
+.next-arrow {
+    position: relative;
+    left: 1vw;
+    top: 0.5vw;
+}
+
+.prev-arrow {
+    position: relative;
+    right: 1vw;
+}
+
+/* Next Module Card Ends */
+
+
+
 
 
 /* ------------------------ CONTENT ENDS --------------------------*/
@@ -620,6 +679,23 @@ footer {
         font-size: 3vw;
     }
 
+    /* Next Module Card Begins */
+
+    .next-container {
+        padding: 2vw 2vw;
+        width: 55vw;
+    }
+
+    .next {
+        font-size: 6vw;
+    }
+
+    .arrow {
+        height: 6vw;
+    }
+
+    /* Next Module Card Ends */
+
 }
 
 /* for tablets */
@@ -719,6 +795,23 @@ footer {
         font-size: 3vw;
     }
 
+    /* Next Module Card Begins */
+
+    .next-container {
+        padding: 2vw 2vw;
+        width: 55vw;
+    }
+
+    .next {
+        font-size: 6vw;
+    }
+
+    .arrow {
+        height: 6vw;
+    }
+
+    /* Next Module Card Ends */
+
 }
 
 /* for longer tablets */
@@ -817,6 +910,23 @@ footer {
     .small-description-text {
         font-size: 3vw;
     }
+
+    /* Next Module Card Begins */
+
+    .next-container {
+        padding: 2vw 2vw;
+        width: 55vw;
+    }
+
+    .next {
+        font-size: 6vw;
+    }
+
+    .arrow {
+        height: 6vw;
+    }
+
+    /* Next Module Card Ends */
 }
 
 /* shorter tablets */
@@ -915,6 +1025,23 @@ footer {
     .small-description-text {
         font-size: 3vw;
     }
+
+    /* Next Module Card Begins */
+
+    .next-container {
+        padding: 2vw 2vw;
+        width: 45vw;
+    }
+
+    .next {
+        font-size: 5vw;
+    }
+
+    .arrow {
+        height: 5vw;
+    }
+
+    /* Next Module Card Ends */
 }
 
 /* laptops */
@@ -1044,6 +1171,14 @@ footer {
     }
 
     /* Card w/ Image At the Bottom Ends */
+
+    /* Next Module Card Begins */
+
+    .next-card {
+        padding: 6vw 0;
+    }
+
+    /* Next Module Card Ends */
 
 }
 
@@ -1181,6 +1316,14 @@ footer {
     }
 
     /* Card w/ Image At the Bottom Ends */
+
+    /* Next Module Card Begins */
+
+    .next-card {
+        padding: 5vw 0;
+    }
+
+    /* Next Module Card Ends */
 
 }
 
@@ -1323,6 +1466,8 @@ footer {
 
     /* Card w/ Image At the Bottom Ends */
 
+    
+
 }
 
 @media (min-aspect-ratio: 17/10) and (max-aspect-ratio: 18/10) {
@@ -1431,6 +1576,10 @@ footer {
     }
 
     /* Card w/ Image At the Bottom Ends */
+
+    .next-card-title {
+        font-size: 2.25vw;
+    }
 
 }
 
