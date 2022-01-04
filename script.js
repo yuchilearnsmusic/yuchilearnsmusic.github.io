@@ -124,6 +124,9 @@ function removeActive() {
 
 console.log(width / height);
 
+function responsive() {
+
+
 if (width / height < 0.61) {
 
     /* Title Card Begins */
@@ -665,5 +668,9 @@ function bottomImageCardStyle() {
         item.style.padding = "3vw 3vw 0 3vw";
     })
 }
+
+}
+
+responsive();
 
 /* ----------------------- RESPONSIVE CARDS ENDS --------------------------*/
