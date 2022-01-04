@@ -335,10 +335,6 @@ button a {
 }
 
 
-.title h5 {
-    font-size: 3vw; /* for width / height > 2.1 */
-}
-
 .img-picture {
     width: 24vw; /* for width / height > 2.1 */
     height: auto;
@@ -449,6 +445,10 @@ footer {
     .icon, .empty {
         width: 10vw;
     }
+    .icon-top{
+        width: auto;
+        margin-right: 1vw;
+    }
 
     .instagram {
         height: 7vh;
@@ -512,7 +512,9 @@ footer {
 
 /* Media Queries with Aspect Ratios*/
 
-@media (min-aspect-ratio: 16/9) {
+/* Phones */
+
+@media (max-aspect-ratio: 3/5) {
 
     /* Title Card Begins */
 
@@ -530,7 +532,8 @@ footer {
     }
 
     .title-heading-big {
-        margin-top: 2vh;
+        margin-top: 3vh;
+        font-size: 12vw;
     }
 
     button {
@@ -539,40 +542,818 @@ footer {
         width: 40vw;
     }
 
-    
-    /* titleImage.style.marginTop = "10vh";
-    titleImage.style.width = "75vw";
+    .img-title {
+        margin-top: 10vh;
+        width: 75vw;
+    }
 
-    titleHeadingSmall.style.fontSize = "9vw";
+    .title-text h5 {
+        font-size: 9vw;
+    }
 
-    titleHeadingBig.style.fontSize = "12vw";
-    titleHeadingBig.style.marginTop = "3vh";
+    .title-text h1 {
+        font-size: 12vw;
+        margin-top: 3vh;
+    }
 
     /* Title Card Ends */
 
     /* Big Card Begins */
 
-    /* imgPicture.forEach((item) => {
-        item.style.width = "65vw";
-    })
+    /* .img-picture, .big-card, .third-card {
+        width: 65vw;
+    } */
 
-    bigCard.forEach((item) => {
-        item.style.height = "65vh";
-    })
+    .img-picture {
+        width: 65vw;
+    }
 
-    thirdCard.forEach((item) => {
-        item.style.height = "65vh";
-    })
+    .img-full-circle {
+        width: 59vw;
+    }
 
-    imageFullCircle.forEach((item) => {
-        item.style.width = "59vw";
-    })
+    .description p {
+        font-size: 3vw;
+    }
 
-    description.forEach((item) => {
-        item.style.fontSize = "3vw";
-    })
+    /* phone() */
 
-    phone(); */
+    .title-of-card {
+        font-size: 7vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 5vw;
+        border-radius: 12vw;
+    }
+
+    .img-icon {
+        width: 20vw;
+    }
 
     /* Big Card Ends */
+}
+
+/* for tablets */
+
+@media (min-aspect-ratio: 3/5) and (max-aspect-ratio: 7/10) {
+
+    /* Title Card Begins */
+
+    .title-card {
+        flex-direction: column; /* keep */
+        height: 80vh;
+    }
+
+    .title-text {
+        display: flex; /* keep */
+        flex-direction: column; /* keep */
+        align-items: center; /* keep */
+        width: 100%; /* keep */
+        padding-top: 3vh; /* keep */
+    }
+
+    .title-heading-big {
+        margin-top: 2vh;
+        font-size: 9vw;
+    }
+
+    button {
+        padding: 1.5vw 4vw; /* keep */
+        font-size: 3vw; /* keep */
+        width: 40vw; /* keep */
+    }
+
+    .img-title {
+        margin-top: 5vh;
+        width: 75vw;
+    }
+
+    .title-text h5 {
+        font-size: 7vw;
+    }
+
+    /* Title Card Ends */
+
+    /* Big Card Begins */
+
+    .img-picture {
+        width: 57vw;
+    }
+
+    .img-full-circle {
+        width: 50vw;
+    }
+
+    .description p {
+        font-size: 3vw;
+    }
+
+    /* phone() */
+
+    .title-of-card {
+        font-size: 5vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 5vw;
+        border-radius: 12vw;
+    }
+
+    .img-icon {
+        width: 16vw;
+    }
+
+    /* Big Card Ends */
+}
+
+/* for longer tablets */
+
+@media (min-aspect-ratio: 7/10) and (max-aspect-ratio: 8/10) {
+
+    /* Title Card Begins */
+
+    .title-card {
+        flex-direction: column; /* keep */
+        height: 90vh;
+    }
+
+    .title-text {
+        display: flex; /* keep */
+        flex-direction: column; /* keep */
+        align-items: center; /* keep */
+        width: 100%; /* keep */
+        padding-top: 3vh; /* keep */
+    }
+
+    .title-heading-big {
+        margin-top: 2vh;
+        font-size: 9vw;
+    }
+
+    button {
+        padding: 1.5vw 4vw; /* keep */
+        font-size: 3vw; /* keep */
+        width: 40vw; /* keep */
+    }
+
+    .img-title {
+        margin-top: 7vh;
+        width: 75vw;
+    }
+
+    .title-text h5 {
+        font-size: 7vw;
+    }
+
+    /* Title Card Ends */
+
+    /* Big Card Begins */
+
+    .img-picture {
+        width: 48vw;
+    }
+
+    .img-full-circle {
+        width: 44vw;
+    }
+
+    .description p {
+        font-size: 3vw;
+    }
+
+    /* phone() */
+
+    .title-of-card {
+        font-size: 5vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 5vw;
+        border-radius: 12vw;
+    }
+
+    .img-icon {
+        width: 14vw;
+    }
+
+    /* Big Card Ends */
+}
+
+/* shorter tablets */
+
+@media (min-aspect-ratio: 8/10) and (max-aspect-ratio: 1/1) {
+
+    /* Title Card Begins */
+
+    .title-card {
+        flex-direction: column; /* keep */
+        height: 90vh;
+    }
+
+    .title-text {
+        display: flex; /* keep */
+        flex-direction: column; /* keep */
+        align-items: center; /* keep */
+        width: 100%; /* keep */
+        padding-top: 3vh; /* keep */
+    }
+
+    .title-heading-big {
+        margin-top: 2vh;
+        font-size: 9vw;
+    }
+
+    button {
+        padding: 1.5vw 4vw; /* keep */
+        font-size: 3vw; /* keep */
+        width: 40vw; /* keep */
+    }
+
+    .img-title {
+        margin-top: 5vh;
+        width: 55vw;
+    }
+
+    .title-text h5 {
+        font-size: 7vw;
+    }
+
+    /* Title Card Ends */
+
+    /* Big Card Begins */
+
+    .img-picture {
+        width: 34vw;
+    }
+
+    .img-full-circle {
+        width: 30vw;
+    }
+
+    .description p {
+        font-size: 3vw;
+    }
+
+    /* phone() */
+
+    .title-of-card {
+        font-size: 5.5vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 5vw;
+        border-radius: 12vw;
+    }
+
+    .img-icon {
+        width: 13vw;
+    }
+
+    /* Big Card Ends */
+}
+
+/* laptops */
+
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 13/10) {
+
+    /* Title Card Begins */
+
+    .title-card {
+        flex-direction: row; /* keep */
+    }
+
+    .title-text {
+        display: flex; /* keep */
+        flex-direction: column; /* keep */
+        justify-content: center;
+        width: 45%; /* keep */
+        padding-top: 3vh; /* keep */
+    }
+
+    .title-heading-big {
+        margin-top: 0;
+        font-size: 5vw;
+    }
+
+    button {
+        padding: 1.5vw 4vw; /* keep */
+        font-size: 3vw; /* keep */
+        width: 40vw; /* keep */
+    }
+
+    .img-title {
+        margin-top: 5vh;
+        width: 45vw;
+    }
+
+    .title-text h5 {
+        font-size: 5vw;
+    }
+
+    /* Title Card Ends */
+
+    /* Big Card Begins */
+
+    .img-picture {
+        width: 28vw;
+    }
+
+    .img-full-circle {
+        width: 26vw;
+    }
+
+    .description p {
+        font-size: 2.5vw;
+    }
+
+    /* phone() */
+
+    .title-of-card {
+        font-size: 4.5vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 3vw;
+        border-radius: 7vw;
+    }
+
+    .img-icon {
+        width: 9vw;
+    }
+
+    /* Big Card Ends */
+
+    /* Small Cards Begins*/
+
+    .small-card-title {
+        font-size: 2.5vw;
+    }
+
+    .small-card-image {
+        width: 22vw;
+    }
+
+    .third-card {
+        height: 60vh;
+        max-width: 42vw;
+        border-radius: 8vw;
+    }
+
+    /* Small Cards Ends*/
+
+    /* Footer Begins */
+
+    footer {
+        justify-content: space-around;
+        flex-direction: row;
+        height: 20vh;
+    }
+
+    .footer-message {
+        font-size: 1.5vw;
+    }
+
+    /* Footer Ends */
+
+
+}
+
+
+@media (min-aspect-ratio: 13/10) and (max-aspect-ratio: 14/10) {
+
+    /* Title Card Begins */
+
+    .title-card {
+        flex-direction: row; /* keep */
+    }
+
+    .title-text {
+        display: flex; /* keep */
+        flex-direction: column; /* keep */
+        justify-content: center;
+        width: 45%; /* keep */
+        padding-top: 3vh; /* keep */
+    }
+
+    .title-heading-big {
+        margin-top: 0;
+        font-size: 5vw;
+    }
+
+    button {
+        padding: 1.5vw 4vw; /* keep */
+        font-size: 3vw; /* keep */
+        width: 40vw; /* keep */
+    }
+
+    .img-title {
+        margin-top: 5vh;
+        width: 45vw;
+    }
+
+    .title-text h5 {
+        font-size: 5vw;
+    }
+
+    /* Title Card Ends */
+
+    /* Big Card Begins */
+
+    .img-picture {
+        width: 30vw;
+    }
+
+    .img-full-circle {
+        width: 29vw;
+    }
+
+    .description p {
+        font-size: 3vw;
+    }
+
+    /* phone() */
+
+    .title-of-card {
+        font-size: 5vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 3vw;
+        border-radius: 7vw;
+    }
+
+    .img-icon {
+        width: 10vw;
+    }
+
+    .big-card {
+        height: 80vh;
+    }
+
+    /* Big Card Ends */
+
+    /* Small Cards Begins*/
+
+    .small-card-title {
+        font-size: 2.5vw;
+    }
+
+    .small-card-image {
+        width: 21vw;
+    }
+
+    .third-card {
+        height: 60vh;
+        max-width: 42vw;
+        border-radius: 8vw;
+    }
+
+    .small-card-icon {
+        width: 8vw;
+    }
+
+    /* Small Cards Ends*/
+
+    /* Footer Begins */
+
+    footer {
+        justify-content: space-around;
+        flex-direction: row;
+        height: 20vh;
+    }
+
+    .footer-message {
+        font-size: 1.5vw;
+    }
+
+    /* Footer Ends */
+
+
+}
+
+@media (min-aspect-ratio: 14/10) and (max-aspect-ratio: 17/10) {
+
+    /* Title Card Begins */
+
+    .title-card {
+        flex-direction: row; /* keep */
+    }
+
+    .title-text {
+        display: flex; /* keep */
+        flex-direction: column; /* keep */
+        justify-content: center;
+        width: 45%; /* keep */
+        padding-top: 3vh; /* keep */
+    }
+
+    .title-heading-big {
+        margin-top: 0;
+        font-size: 5vw;
+    }
+
+    button {
+        padding: 1.5vw 4vw; /* keep */
+        font-size: 3vw; /* keep */
+        width: 40vw; /* keep */
+    }
+
+    .img-title {
+        margin-top: 5vh;
+        width: 38vw;
+    }
+
+    .title-text h5 {
+        font-size: 5vw;
+    }
+
+    /* Title Card Ends */
+
+    /* Big Card Begins */
+
+    .img-picture {
+        width: 26vw;
+    }
+
+    .img-full-circle {
+        width: 23vw;
+    }
+
+    .description p {
+        font-size: 2.5vw;
+    }
+
+    /* phone() */
+
+    .title-of-card {
+        font-size: 3.75vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 3vw;
+        border-radius: 7vw;
+    }
+
+    .img-icon {
+        width: 8.5vw;
+    }
+
+    .big-card {
+        height: 80vh;
+    }
+
+    /* Big Card Ends */
+
+    /* Small Cards Begins*/
+
+    .small-card-title {
+        font-size: 2vw;
+    }
+
+    .small-card-image {
+        width: 16vw;
+    }
+
+    .third-card {
+        height: 60vh;
+        max-width: 42vw;
+        border-radius: 8vw;
+    }
+
+    .small-card-icon {
+        width: 6vw;
+    }
+
+    .small-title-top {
+        padding-left: 0;
+    }
+
+    /* Small Cards Ends*/
+
+    /* Footer Begins */
+
+    footer {
+        justify-content: space-around;
+        flex-direction: row;
+        height: 20vh;
+    }
+
+    .footer-message {
+        font-size: 1.5vw;
+    }
+
+    /* Footer Ends */
+
+}
+
+@media (min-aspect-ratio: 17/10) and (max-aspect-ratio: 18/10) {
+
+    /* Title Card Begins */
+
+    .title-card {
+        flex-direction: row; 
+    }
+
+    /* Title Card Ends */
+
+    /* Big Card Begins */
+
+    .img-picture {
+        width: 25.5vw;
+    }
+
+    .img-full-circle {
+        width: 22vw;
+    }
+
+    .description p {
+        font-size: 2.5vw;
+    }
+
+    /* phone() */
+
+    .title-of-card {
+        font-size: 3.75vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 3vw;
+        border-radius: 7vw;
+    }
+
+    .img-icon {
+        width: 8.5vw;
+    }
+
+    .big-card {
+        height: 80vh;
+    }
+
+    /* Big Card Ends */
+
+    /* Small Cards Begins*/
+
+    .small-card-title {
+        font-size: 2vw;
+    }
+
+    .small-card-image {
+        width: 16vw;
+    }
+
+    .third-card {
+        height: 60vh;
+        max-width: 42vw;
+        border-radius: 8vw;
+    }
+
+    .small-card-icon {
+        width: 6vw;
+    }
+
+    .small-title-top {
+        padding-left: 0;
+    }
+
+    /* Small Cards Ends*/
+
+    /* Footer Begins */
+
+    footer {
+        justify-content: space-around;
+        flex-direction: row;
+        height: 20vh;
+    }
+
+    .footer-message {
+        font-size: 1vw;
+    }
+
+    /* Footer Ends */
+
+}
+
+
+@media (min-aspect-ratio: 18/10){
+
+    /* Title Card Begins */
+
+    .title-card {
+        flex-direction: row; 
+    }
+
+    /* Title Card Ends */
+
+    /* Big Card Begins */
+
+    .img-picture {
+        width: 20vw;
+    }
+
+    .img-full-circle {
+        width: 18vw;
+    }
+
+    .description p {
+        font-size: 1.5vw;
+    }
+
+    /* phone() */
+
+    .title-of-card {
+        font-size: 3.75vw;
+    }
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    .card {
+        padding: 3vw;
+        border-radius: 7vw;
+    }
+
+    .img-icon {
+        width: 7vw;
+    }
+
+    .big-card {
+        height: 80vh;
+    }
+
+    /* Big Card Ends */
+
+    /* Small Cards Begins*/
+
+    .small-card-title {
+        font-size: 1.75vw;
+    }
+
+    .small-card-image {
+        width: 16vw;
+    }
+
+    .third-card {
+        height: 70vh;
+        max-width: 42vw;
+        border-radius: 8vw;
+    }
+
+    .small-card-icon {
+        width: 6vw;
+    }
+
+    .small-title-top {
+        padding-left: 0;
+    }
+
+    /* Small Cards Ends*/
+
+    /* Footer Begins */
+
+    footer {
+        justify-content: space-around;
+        flex-direction: row;
+        height: 20vh;
+    }
+
+    .footer-message {
+        font-size: 1vw;
+    }
+
+    /* Footer Ends */
+
 }
