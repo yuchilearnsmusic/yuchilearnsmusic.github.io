@@ -37,3 +37,5 @@ window.onload = () => {
         });
     }
 };
+
+console.log(window.innerWidth / window.innerHeight)
