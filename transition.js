@@ -7,12 +7,12 @@ window.onload = () => {
     
     /* document.querySelector allows us to access classes/ids from HTML and CSS.
     Here we are selecting the 'transition' div, and the navigation links*/
-    const transition_el = document.querySelector('.transition');
+    const transition = document.querySelector('.transition');
     const anchors = document.querySelectorAll('.page-transition-link');
 
     // when the page has loaded, we want the transition div to go away
     setTimeout ( () => {
-        transition_el.classList.remove('is-active');
+        transition.classList.remove('is-active');
     }, 500);
 
     /* when we click on a link, it immediately goes to the other page. We want to delay
@@ -26,7 +26,7 @@ window.onload = () => {
 
             let target = e.target.href; //stores the destination of the link
 
-            transition_el.classList.add('is-active'); //this overlays the black transition div on top of our page
+            transition.classList.add('is-active'); //this overlays the black transition div on top of our page
 
             /*set timeout for the same time that the transition animation lasts for (0.5s). Therefore, as 
             soon as the 500ms is over (and the black transition div has fully covered the screen), 

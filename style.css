@@ -83,6 +83,10 @@ h5 {
     color: #FF854D;
 }
 
+.white-font {
+    color: white;
+}
+
 /* ----------------------- Universal Styles Ends --------------------------- */
 
 /* --------------------------- Header Begins ------------------------------- */
@@ -176,6 +180,10 @@ header {
     color:white;
 }
 
+.category-link {
+    font-weight: 100;
+}
+
 /* Images of Modules */
 
 /* Layout of Modules */
@@ -187,10 +195,7 @@ header {
 }
 
 .course-slot {
-    width: 23vw;
-    padding: 2vw;
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 42vw;
 }
 
 /* Specific Categories (hide when not selected) */
@@ -284,6 +289,39 @@ button a {
 
 
 /* ------------------------ TITLE ENDS ----------------------------*/
+
+/* ------------------------ TABLE OF CONTENTS BEGINS ----------------------------*/
+
+.table-of-contents {
+    width: 80vw;
+    margin-bottom: 8vh;
+}
+
+.toc-big-heading {
+    text-align: center;
+}
+
+.toc-item-container {
+    display: flex;
+    align-items: center;
+
+    margin-top: 3vh;
+    padding: 2vw;
+    border-radius: 2rem;
+}
+
+.toc-heading {
+    margin-right: 5vw;
+    margin-left: 1vw;
+}
+
+.table-of-contents a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------------ TABLE OF CONTENTS ENDS ----------------------------*/
+
 
 /* ------------------------ CONTENT BEGINS ------------------------*/
 
@@ -519,11 +557,10 @@ footer {
 
 @media (orientation: landscape) {
 
-    /* Universal */
-
-    p {
-        font-size: 1.5vw;
+    .mobile {
+        display:none;
     }
+    /* Universal */
 
     .icon, .empty {
         width: 10vw;
@@ -535,6 +572,16 @@ footer {
 
     .instagram {
         height: 7vh;
+    }
+
+    .close-computer {
+        height:80%;
+        width:auto;
+        margin-right: 5vw;
+    }
+
+    .small-description-text {
+        font-size: 1.5vw;
     }
 }
 
@@ -566,30 +613,8 @@ footer {
         margin-right: 5vw;
     }
 
-    .course-slot {
-        width: 42vw;
-        border-radius: 0;
-        box-shadow: none;
-    }
-
     /* Header Ends */
 
-}
-
-
-
-
-
-
-
-/* Hide (has to go at the end so it can override other styles) */
-
-.hide {
-    display: none;
-}
-
-.close-mobile {
-    display: none;
 }
 
 /* Media Queries with Aspect Ratios*/
@@ -734,6 +759,31 @@ footer {
 
     /* Next Module Card Ends */
 
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin-bottom: 6vh;
+    }
+
+    .toc-big-heading {
+        font-size: 6vw;
+    }
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 3vw;
+    }
+    
+    .toc-heading {
+        font-size: 4.5vw;
+    }
+
+    .toc-title {
+        font-size: 4.5vw;
+    }
+
+    /* Table of Contents Ends */
+
 }
 
 /* for tablets */
@@ -863,8 +913,38 @@ footer {
 
     /* Next Module Card Ends */
 
-    
+    /* Learn Begins */
 
+    .learn-text h2 {
+        font-size: 6vw;
+    }
+
+    /* Learn Ends */
+
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin-bottom: 6vh;
+    }
+
+    .toc-big-heading {
+        font-size: 6vw;
+    }
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 3vw;
+    }
+    
+    .toc-heading {
+        font-size: 4.5vw;
+    }
+
+    .toc-title {
+        font-size: 4.5vw;
+    }
+
+    /* Table of Contents Ends */
 }
 
 /* for longer tablets */
@@ -993,6 +1073,39 @@ footer {
     }
 
     /* Next Module Card Ends */
+
+    /* Learn Begins */
+
+    .learn-text h2 {
+        font-size: 6vw;
+    }
+
+    /* Learn Ends */
+
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin-bottom: 6vh;
+    }
+
+    .toc-big-heading {
+        font-size: 6vw;
+    }
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 3vw;
+    }
+    
+    .toc-heading {
+        font-size: 4.5vw;
+    }
+
+    .toc-title {
+        font-size: 4.5vw;
+    }
+
+    /* Table of Contents Ends */
 }
 
 /* shorter tablets */
@@ -1125,6 +1238,39 @@ footer {
     }
 
     /* Next Module Card Ends */
+
+    /* Learn Begins */
+
+    .learn-text h2 {
+        font-size: 6vw;
+    }
+
+    /* Learn Ends */
+
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin-bottom: 6vh;
+    }
+
+    .toc-big-heading {
+        font-size: 6vw;
+    }
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 3vw;
+    }
+    
+    .toc-heading {
+        font-size: 4.5vw;
+    }
+
+    .toc-title {
+        font-size: 4.5vw;
+    }
+
+    /* Table of Contents Ends */
 }
 
 /* laptops */
@@ -1267,6 +1413,24 @@ footer {
     }
 
     /* Next Module Card Ends */
+
+    /* Learn Begins */
+
+    .learn-text h2 {
+        font-size: 4vw;
+    }
+
+    .category-link {
+        font-size: 2vw;
+        font-weight: 100;
+    }
+
+    .course-slot p {
+        font-weight: 3vw;
+    }
+
+    /* Learn Ends */
+
 
 }
 
@@ -1418,6 +1582,23 @@ footer {
 
     /* Next Module Card Ends */
 
+    /* Learn Begins */
+
+    .learn-text h2 {
+        font-size: 4vw;
+    }
+
+    .category-link {
+        font-size: 2vw;
+        font-weight: 100;
+    }
+
+    .course-slot p {
+        font-weight: 3vw;
+    }
+
+    /* Learn Ends */
+
 }
 
 @media (min-aspect-ratio: 14/10) and (max-aspect-ratio: 17/10) {
@@ -1564,7 +1745,51 @@ footer {
 
     /* Card w/ Image At the Bottom Ends */
 
+    /* Learn Begins */
+
+    .learn-text h2 {
+        font-size: 2.5vw;
+    }
+
+    .category-link {
+        font-size: 1.5vw;
+        font-weight: 100;
+    }
+
+    .course-slot p {
+        font-size: 2vw;
+    }
+
+    .course-slot {
+        width: 30vw;
+    }
+
+    /* Learn Ends */
+
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin: 8vh 0 16vh 0;
+    }
+
+    .toc-big-heading {
+        font-size: 5vw;
+    }
     
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 2vw;
+    }
+    
+    .toc-heading {
+        font-size: 2vw;
+    }
+
+    .toc-title {
+        font-size: 2vw;
+    }
+
+    /* Table of Contents Ends */
 
 }
 
@@ -1684,6 +1909,52 @@ footer {
         font-size: 2.25vw;
     }
 
+    /* Learn Begins */
+
+    .learn-text h2 {
+        font-size: 2.5vw;
+    }
+
+    .category-link {
+        font-size: 1.5vw;
+        font-weight: 100;
+    }
+
+    .course-slot p {
+        font-size: 2vw;
+    }
+
+    .course-slot {
+        width: 30vw;
+    }
+
+    /* Learn Ends */
+
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin: 8vh 0 16vh 0;
+    }
+
+    .toc-big-heading {
+        font-size: 5vw;
+    }
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 2vw;
+    }
+    
+    .toc-heading {
+        font-size: 2vw;
+    }
+
+    .toc-title {
+        font-size: 2vw;
+    }
+
+    /* Table of Contents Ends */
+
 }
 
 
@@ -1798,6 +2069,52 @@ footer {
 
     /* Card w/ Image At the Bottom Ends */
 
+    /* Learn Begins */
+
+    .learn-text h2 {
+        font-size: 2.5vw;
+    }
+
+    .category-link {
+        font-size: 1.5vw;
+        font-weight: 100;
+    }
+
+    .course-slot p {
+        font-size: 2vw;
+    }
+
+    .course-slot {
+        width: 30vw;
+    }
+
+    /* Learn Ends */
+
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin: 8vh 0 16vh 0;
+    }
+
+    .toc-big-heading {
+        font-size: 5vw;
+    }
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 2vw;
+    }
+    
+    .toc-heading {
+        font-size: 2vw;
+    }
+
+    .toc-title {
+        font-size: 2vw;
+    }
+
+    /* Table of Contents Ends */
+
 }
 
 /* -----------------------------------PAGE TRANSITION BEGINS--------------------------------------------*/
@@ -1819,3 +2136,19 @@ footer {
 }
 
 /* -----------------------------------PAGE TRANSITION ENDS--------------------------------------------*/
+
+/* Hide (has to go at the end so it can override other styles) */
+
+.hide {
+    display: none;
+}
+
+.close-mobile {
+    display: none;
+}
+
+.close-computer {
+    display: none;
+    position: relative;
+    left: 3vw;
+}

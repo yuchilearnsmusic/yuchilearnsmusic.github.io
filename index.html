@@ -13,6 +13,7 @@
 
     <link href="style.css" rel="stylesheet">
 
+    <!-- adds browser icon -->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
 
@@ -43,13 +44,15 @@
             <img src="assets/logo-words.png" alt="YUCHI LEARNS MUSIC" class="logo-words">
         </div>
 
-        <h3 class = computer>Learn</h3>
+        <h3 class = "computer learn-icon">Learn</h3>
+
+        <img src="assets/close.png" alt="close navigation" class = "close-computer computer">
 
         <!-- Mobile Navigation -->
 
         <img src="assets/menu.png" alt="menu" class = "img-menu mobile"/>
 
-        <img src="assets/close.png" alt="close navigation" class = "img-close mobile hide">
+        <img src="assets/close.png" alt="close navigation" class = "close-mobile mobile">
 
     </header>
 
@@ -66,9 +69,9 @@
 
             <div class="learn-categories">
 
-                <div class="category1 active">Compression</div>
-                <div class="category2">EQ</div>
-                <div class="category3">Reverb</div>
+                <div class="category1 category active"><h6 class = "category-link">Compression</h6></div>
+                <div class="category2 category"><h6 class = "category-link">EQ</h6></div>
+                <div class="category3 category"><h6 class = "category-link">Reverb</h6></div>
     
             </div>
         </div>
@@ -80,26 +83,20 @@
             <!-- Compression Courses -->
 
             <div class="compression-courses">
-                <div class="course-row">
-                    <div class="course-slot">
-                        <img src="assets/compression/evening out volume.png" class = "course-img">
-                    </div>
-    
-                    <div class="course-slot">
-                        <img src="assets/compression/shape transients title.png" class = "course-img">
-                    </div>
-                </div>
 
+                    <div class="course-slot">
+                        <a href="index.html" class = "page-transition-link">
+                            <img src="assets/compression/intro-nav.png" alt = "intro to compression" class = "course-img">
+                            <p class = "green">INTRO TO COMPRESSION</p>
+                        </a>
+                    </div>
 
-                <div class="course-row">
                     <div class="course-slot">
-                        <img src="assets/compression/creating depth.png" class = "course-img">
+                        <a href="shaping-transients.html">
+                            <img src="assets/compression/shape-transients-nav.png" alt = "shape attack and sustain with compression" class = "course-img">
+                            <p class = "real-red">SHAPING ATTACK & SUSTAIN</p>
+                        </a>
                     </div>
-    
-                    <div class="course-slot">
-                        <img src="assets/compression/parallel compression.png" class = "course-img">
-                    </div>
-                </div>
 
             </div>
 
@@ -134,8 +131,32 @@
     <a id="start"></a>
     <div class="content">
 
+        <!---------Table of Contents Begins ---------->
+
+        <div class="table-of-contents">
+            <h4 class = "toc-big-heading green-font">~ CONTENT ~</h4>
+
+            <a href = "#whatscomp">
+                <div class="toc-item-container green">
+                    <h5 class = "toc-heading">01</h5>
+                    <h5 class = "toc-title">What is Compression?</h5>
+                </div>
+            </a>
+
+            <a href = "#use">
+                <div class="toc-item-container green">
+                    <h5 class = "toc-heading">02</h5>
+                    <h5 class = "toc-title">What can it be used for?</h5>
+                </div>
+            </a>
+
+        </div>
+
+        <!---------Table of Contents Ends ---------->
+
         <!---------- Card 1 Begins ----------->
 
+        <a id="whatscomp"></a>
         <div class="card big-card orange">
 
             <div class="row">
@@ -208,6 +229,7 @@
 
         <!---------- Card 3 Begins ----------->
 
+        <a id="use"></a>
         <div class="card big-card orange">
 
             <div class="row">
