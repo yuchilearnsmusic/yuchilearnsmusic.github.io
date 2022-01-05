@@ -66,6 +66,10 @@ h5 {
     background-color: #FF854D;
 }
 
+.real-red {
+    background-color: #ff7370ff;
+}
+
 
 .green-font {
     color: #92D050;
@@ -193,7 +197,12 @@ header {
 
 .compression-courses {
     width:100%;
+}
 
+.compression-courses p {
+    padding: 1vh 0;
+    font-family: "Lilita One";
+    color: white;
 }
 
 .course-img {
@@ -571,10 +580,6 @@ footer {
     display: none;
 }
 
-.red-words {
-    color: #FF854D;
-}
-
 /* Media Queries with Aspect Ratios*/
 
 /* Phones */
@@ -654,6 +659,11 @@ footer {
 
     .img-icon {
         width: 20vw;
+    }
+
+    .title-heading-medium {
+        margin-top: 3vh;
+        font-size: 7.5vw;
     }
 
     /* Big Card Ends */
@@ -772,6 +782,11 @@ footer {
         width: 16vw;
     }
 
+    .title-heading-medium {
+        margin-top: 3vh;
+        font-size: 7.5vw;
+    }
+
     /* Big Card Ends */
 
     /* Card w/ Image At the Bottom Begins */
@@ -886,6 +901,11 @@ footer {
 
     .img-icon {
         width: 14vw;
+    }
+
+    .title-heading-medium {
+        margin-top: 3vh;
+        font-size: 7.5vw;
     }
 
     /* Big Card Ends */
@@ -1003,6 +1023,11 @@ footer {
         width: 13vw;
     }
 
+    .title-heading-medium {
+        margin-top: 3vh;
+        font-size: 7.5vw;
+    }
+
     /* Big Card Ends */
 
     /* Card w/ Image At the Bottom Begins */
@@ -1115,6 +1140,11 @@ footer {
 
     .img-icon {
         width: 9vw;
+    }
+
+    .title-heading-medium {
+        margin-top: 0.5vh;
+        font-size: 4.5vw;
     }
 
     /* Big Card Ends */
@@ -1256,6 +1286,11 @@ footer {
 
     .big-card {
         height: 80vh;
+    }
+
+    .title-heading-medium {
+        margin-top: 0.5vh;
+        font-size: 4.5vw;
     }
 
     /* Big Card Ends */
@@ -1402,6 +1437,11 @@ footer {
         height: 80vh;
     }
 
+    .title-heading-medium {
+        margin-top: 0.5vh;
+        font-size: 4.5vw;
+    }
+
     /* Big Card Ends */
 
     /* Small Cards Begins*/
@@ -1515,6 +1555,11 @@ footer {
 
     .big-card {
         height: 80vh;
+    }
+
+    .title-heading-medium {
+        margin-top: 0.5vh;
+        font-size: 4.5vw;
     }
 
     /* Big Card Ends */
@@ -1631,6 +1676,10 @@ footer {
         height: 80vh;
     }
 
+    .title-heading-medium {
+        font-size: 4.5vw;
+    }
+
     /* Big Card Ends */
 
     /* Small Cards Begins*/
@@ -1692,3 +1741,23 @@ footer {
     /* Card w/ Image At the Bottom Ends */
 
 }
+
+/* -----------------------------------PAGE TRANSITION BEGINS--------------------------------------------*/
+
+
+.transition{
+    position: fixed;
+    top:0;
+    left:-100%;
+    width:100%;
+    bottom:0;
+    z-index: 101;
+    background-color: #FFBD59;
+    transition: 0.5s ease-out;
+}
+
+.transition.is-active {
+    left: 0px;
+}
+
+/* -----------------------------------PAGE TRANSITION ENDS--------------------------------------------*/

@@ -29,6 +29,9 @@
 
 <body class = "light-orange">
 
+    <!--This allows us to transition between pages smoothly-->
+    <div class="transition is-active"></div>
+
     <!-- This is the Navigation Bar-->
 
     <header>
@@ -119,7 +122,7 @@
             <h5 class = "title-heading-small">Intro To:</h5>
             <h4 class = "title-heading-big">COMPRESSION</h4>
 
-            <button class = "button"><a href="">Let's Start</a></button>
+            <button onclick = "location.href='#start'" class = "button green-font">Let's Start</button>
         </div>
 
     </div>
@@ -128,6 +131,7 @@
 
     <!---------- Cards Begins ----------->
 
+    <a id="start"></a>
     <div class="content">
 
         <!---------- Card 1 Begins ----------->
@@ -252,7 +256,11 @@
                     </div>
         
                     <div class="title title-top small-title-top">
-                        <h5 class = "title-of-card small-card-title">Shaping the Attack and</h5>
+                        <h5 class = "title-of-card small-card-title">Shaping Attack & Sustain</h5>
+                    </div>
+
+                    <div class="empty">
+
                     </div>
 
 
@@ -265,7 +273,7 @@
                     <div class="empty computer"></div>
 
                     <div class="title">
-                        <h5 class = "title-of-card small-card-title">Sustain of a Sound</h5>
+                        <h5 class = "title-of-card small-card-title">Shaping Attack & Sustain</h5>
                     </div>
                     
                     <div class="icon">
@@ -420,10 +428,34 @@
 
             <!---------- Card Ends ----------->
 
+            <!-- Next Card Begins -->
+
+            <div class="card third-card next-card red">
+
+        
+                <div class="title title-top small-title-top">
+                    <h5 class = "title-of-card small-card-title next-card-title">SHAPING ATTACK AND SUSTAIN</h5>
+                </div>
 
 
 
+                <img src="assets/compression/shaping-transients/title.png" class=" img-picture img-full-circle small-card-image">
+
+                <div class="next-container">
+                    <a href="shaping-transients.html" class="next red-font page-transition-link">
+                        
+                        NEXT MODULE
+
+                        <img src="assets/red-arrow.png" alt= "red arrow" class = "arrow next-arrow"> 
+
+                    </a>
+                </div>
+
+            </div>
+
+           <!-- Next Card Ends -->
         </div>
+
     </div>
 
 
@@ -451,6 +483,7 @@
     <!----------------------------- CONTENT ENDS --------------------------->
 
     <script src="script.js"></script>
+    <script src="transition.js"></script>
 
 </body>
 
