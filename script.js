@@ -13,7 +13,8 @@ let compressionCourses = document.querySelector(".compression-courses");
 // navigation items
 
 let menu = document.querySelector(".img-menu"); // hamburger menu
-let close = document.querySelector(".img-close"); // hamburger menu
+let closeMobile = document.querySelector(".close-mobile");
+let learnIcon = document.querySelector(".learn-icon"); 
 
 // learn pop-up
 
@@ -32,25 +33,25 @@ let hide = document.querySelector(".hide")
 /* ----------------------- OPEN AND CLOSE MENU BEGINS -----------------------*/
 
 menu.onclick = function(){
-    menu.classList.add("hide");
-    close.classList.remove("hide");
-    learn.classList.remove("hide");
+    menu.style.display = "none";
+    closeMobile.style.display = "block";
+    learn.style.display = "flex";
 
     // hide content of the page
 
-    // titleCard.style.display = "none"
-    // content.style.display = "none"
-    // footer.style.display = "none"
+    titleCard.style.display = "none"
+    content.style.display = "none"
+    footer.style.display = "none"
 }
 
-close.onclick = function(){
-    menu.classList.remove("hide");
-    close.classList.add("hide");
-    learn.classList.add("hide");
+closeMobile.onclick = function(){
+    menu.style.display = "block";
+    closeMobile.style.display = "none";
+    learn.style.display = "none";
 
-    // titleCard.style.display = "flex";
-    // content.style.display = "flex";
-    // footer.style.display = "flex";
+    titleCard.style.display = "flex";
+    content.style.display = "flex";
+    footer.style.display = "flex";
 }
 
 /* ----------------------- OPEN AND CLOSE MENU ENDS -----------------------*/

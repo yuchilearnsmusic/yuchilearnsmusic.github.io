@@ -43,6 +43,10 @@ h5 {
     font-size: 3vw;
 }
 
+.add-right-space {
+    margin-right: 2vw;
+}
+
 
 /* Colours */
 
@@ -124,6 +128,8 @@ header {
 }
 
 
+
+
 /* ------------------------------ Header Ends ------------------------------- */
 
 /* ------------------------------ Learn Begins ------------------------------- */
@@ -180,12 +186,6 @@ header {
     display:flex;
 }
 
-.course-row {
-    display:flex;
-    justify-content: space-around;
-    margin-top: 2vh;
-}
-
 .course-slot {
     width: 23vw;
     padding: 2vw;
@@ -197,6 +197,13 @@ header {
 
 .compression-courses {
     width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.compression-courses a {
+    text-decoration: none;
 }
 
 .compression-courses p {
@@ -375,7 +382,8 @@ button a {
 }
 
 .full-image {
-    max-height: 100%;;
+    max-height: 100%;
+    margin: auto 0;
 }
 
 /* Next Module Card Begins */
@@ -510,6 +518,7 @@ footer {
 /* Media Queries */
 
 @media (orientation: landscape) {
+
     /* Universal */
 
     p {
@@ -551,11 +560,10 @@ footer {
         margin-right: 5vw;
     }
 
-    .img-close {
+    .close-mobile {
         height:80%;
         width:auto;
         margin-right: 5vw;
-        display: flex;
     }
 
     .course-slot {
@@ -577,6 +585,10 @@ footer {
 /* Hide (has to go at the end so it can override other styles) */
 
 .hide {
+    display: none;
+}
+
+.close-mobile {
     display: none;
 }
 
@@ -624,6 +636,14 @@ footer {
     .title-text h1 {
         font-size: 12vw;
         margin-top: 3vh;
+    }
+
+    .row {
+        justify-content: start;
+    }
+
+    .row-bottom {
+        justify-content: end;
     }
 
     /* Title Card Ends */
@@ -689,6 +709,10 @@ footer {
         font-size: 3vw;
     }
 
+    .small-card-title {
+        text-align:start;
+    }
+
     /* Next Module Card Begins */
 
     .next-container {
@@ -702,6 +726,10 @@ footer {
 
     .arrow {
         height: 6vw;
+    }
+
+    .next-card-title {
+        text-align: center;
     }
 
     /* Next Module Card Ends */
@@ -787,6 +815,14 @@ footer {
         font-size: 7.5vw;
     }
 
+    .row {
+        justify-content: start;
+    }
+
+    .row-bottom {
+        justify-content: end;
+    }
+
     /* Big Card Ends */
 
     /* Card w/ Image At the Bottom Begins */
@@ -827,11 +863,21 @@ footer {
 
     /* Next Module Card Ends */
 
+    
+
 }
 
 /* for longer tablets */
 
 @media (min-aspect-ratio: 7/10) and (max-aspect-ratio: 8/10) {
+
+    .row {
+        justify-content: start;
+    }
+
+    .row-bottom {
+        justify-content: end;
+    }
 
     /* Title Card Begins */
 
@@ -986,6 +1032,18 @@ footer {
 
     .title-text h5 {
         font-size: 7vw;
+    }
+
+    .empty {
+        width: 10vw;
+    }
+
+    .row {
+        justify-content: start;
+    }
+
+    .row-bottom {
+        justify-content: end;
     }
 
     /* Title Card Ends */
