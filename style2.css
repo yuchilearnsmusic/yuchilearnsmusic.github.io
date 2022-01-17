@@ -21,26 +21,29 @@ p {
 
 /* Headings */
 
+h1 {
+    font-size: 8vmin;
+    font-weight: 200;
+}
+
 h2 {
-    font-weight: 400;
-    color:black;
-    font-size: 6.5vw;
+    font-size: 6vmin;
+    font-weight: 50;
 }
 
 h3 {
-    color: #FFBD59;
-    font-size: 3vh;
+    font-size: 5vmin;
     font-weight: 50;
 }
 
 h4 {
-    font-size: 5.5vw;
-    font-weight: 600;
+    font-size: 4.5vw;
+    font-weight: 50;
 }
 
 h5 {
-    font-weight: 300;
-    font-size: 3vw;
+    font-weight: 50;
+    font-size: 3vmin;
 }
 
 .add-right-space {
@@ -85,6 +88,10 @@ h5 {
 
 .white-font {
     color: white;
+}
+
+.orange-font {
+    color: #FFBD59;
 }
 
 /* ----------------------- Universal Styles Ends --------------------------- */
@@ -228,6 +235,7 @@ header {
 .title-card{
     height:85vh;
     width:100%;
+    flex-direction: column;
     margin-top: 10vh;
     padding:1vw;
     display: flex;
@@ -237,19 +245,13 @@ header {
     box-shadow: 0 6px 10px 0px rgba(255, 121, 89, 0.2), 0 12px 20px 0 rgba(255, 121, 89, 0.19);
 }
 
-.toc-item-container {
-    box-shadow: 0 6px 10px 0px rgba(255, 121, 89, 0.2), 0 12px 20px 0 rgba(255, 121, 89, 0.19);
-}
 
-.toc-big-heading {
-    text-shadow: 2px 2px rgba(255, 121, 89, 0.2);
-}
 
 /* Title Image */
 
 .title-image-holder {
     height: 100%;
-    width: 55%;
+    width: 50%;
 
     display: flex;
     justify-content: center;
@@ -258,18 +260,7 @@ header {
 
 .img-title {
     height: auto;
-    width: 35vw;
-}
-
-
-
-/* Title Text */
-
-.title-text{
-    width: 45%;
-    height: 100%;
-    line-height: 4.5vw;
-    padding-top: 25vh;
+    width: 50%;
 }
 
 button {
@@ -281,7 +272,7 @@ button {
     text-decoration: none;
     font-size: 1.5vw;
     font-family: "Balsamiq Sans";
-    margin-top: 3vh;
+    margin-top: 0.5vmin;
     cursor: pointer;
     width: 30vw;
 }
@@ -303,10 +294,6 @@ button a {
     margin-bottom: 8vh;
 }
 
-.toc-big-heading {
-    text-align: center;
-}
-
 .toc-item-container {
     display: flex;
     align-items: center;
@@ -319,6 +306,15 @@ button a {
 .toc-heading {
     margin-right: 5vw;
     margin-left: 1vw;
+}
+
+.toc-item-container {
+    box-shadow: 0 6px 10px 0px rgba(255, 121, 89, 0.2), 0 12px 20px 0 rgba(255, 121, 89, 0.19);
+}
+
+.toc-big-heading {
+    text-shadow: 2px 2px rgba(255, 121, 89, 0.2);
+    text-align: center;
 }
 
 .table-of-contents a {
@@ -369,8 +365,6 @@ button a {
 
 /* Layout of cards */
 
-/* New Begins */
-
 .row {
     display: flex;
     align-items: center;
@@ -378,16 +372,20 @@ button a {
     height: 20%;
 }
 
+.bottom-row {
+    justify-content: flex-end;
+}
+
 .title-of-card {
     font-size: 5vmin
 }
 
-.small-description-text {
-    font-size: 2.25vmin;
+.description {
+    margin-right: 2vmin;
 }
 
-.bottom-row {
-    justify-content: flex-end;
+.small-description-text {
+    font-size: 2.25vmin;
 }
 
 .img-container {
@@ -426,19 +424,7 @@ button a {
     max-width: 100%;
 }
 
-
-/* New Ends (see bottom for cardd) */
-
-
-/* Pictures */
-
-.text-bottom-card {
-    font-family: "Balsamiq Sans";
-    font-weight: 100;
-}
-
 .small-card-title {
-    font-size: 3vmin;
     margin-left: 1.5vmin;
 }
 
@@ -516,7 +502,7 @@ footer {
 }
 
 .footer-message {
-    font-size: 2vw;
+    font-size: 2vmin;
 }
 
 /* ------------------------ FOOTER BEGINS --------------------------*/
@@ -582,58 +568,8 @@ footer {
 }
 
 video {
-    height: 100%;
-    width: auto;
-}
-
-@media (min-width: 482px) {
-
-    /* Mobile Only Begins */
-
-    .mobile {
-        display:none;
-    }
-
-    .computer {
-        display: block;
-    }
-
-    /* Mobile Only Ends */
-
-    
-    /* Header Begins */
-
-    header {
-        padding:1% 10%;
-    }
-
-    /* Header Ends */
-
-    /* Learn Begins */
-
-    .learn h2 {
-        font-size: 3vw;
-    }
-
-    .category1, .category2, .category3 {
-        text-align: center;
-        padding: 1vw;
-        border-radius: 1vw;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    }
-
-    .compression-courses {
-        margin-top: 5vw;
-        height:60vh;
-        overflow: scroll;
-    }
-
-    .learn-categories {
-        padding-top:2vh;
-    }
-
-    /* Learn Ends */
-
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /* Media Queries */
@@ -643,6 +579,11 @@ video {
     .mobile {
         display:none;
     }
+
+    .computer {
+        display: block;
+    }
+
     /* Universal */
 
     .instagram {
@@ -661,8 +602,19 @@ video {
         border-radius: 8vw;
     }
 
-}
+    .small-card-title {
+        font-size: 4vmin;
+    }
 
+    .title-card {
+        flex-direction: row;
+    }
+
+    .title-image-holder {
+        padding: 0 2vmin;
+    }
+
+}
 
 @media (orientation: portrait) {
     .mobile {
@@ -699,22 +651,31 @@ video {
         font-size: 3vmin;
     }
 
-    .small-card-title {
-        font-size: 5vmin;
-    }
-
     .size-fifty {
         height: 50vh;
     }
 
-    /* Title Card Begins */
-
-    /* .title-image-holder {
-        height: 60%;
-        width: 100%;
-    } */
 
 
+    .small-card-title {
+        font-size: 6vmin;
+    }
+
+        /* Title Card Begins */
+
+        .title-image-holder {
+            height: 70%;
+            width: 100%;
+            padding: 10vmin 10vmin 0 10vmin;
+        }
+    
+        .title-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 30%;  
+        }
 
     
 }
@@ -728,16 +689,7 @@ video {
     /* Title Card Begins */
 
     .title-card {
-        flex-direction: column;
         height: 75vh;
-    }
-
-    .title-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding-top: 3vh;
     }
 
     .title-heading-big {
@@ -756,14 +708,9 @@ video {
         width: 75vw;
     }
 
-    .title-text h5 {
-        font-size: 9vw;
-    }
+    
 
-    .title-text h1 {
-        font-size: 12vw;
-        margin-top: 3vh;
-    }
+    
 
 
     /* Title Card Ends */
@@ -782,24 +729,17 @@ video {
 
     
 
-    .title-heading-medium {
-        margin-top: 3vh;
-        font-size: 7.5vw;
-    }
+    
 
     /* Big Card Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 72vw;
-    }
+    
 
 
 
-    .text-bottom-card {
-        font-size: 5vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -834,22 +774,16 @@ video {
         margin-bottom: 6vh;
     }
 
-    .toc-big-heading {
-        font-size: 6vw;
-    }
+
     
     .toc-item-container {
         margin-top: 3vh;
         padding: 3vw;
     }
     
-    .toc-heading {
-        font-size: 4.5vw;
-    }
 
-    .toc-title {
-        font-size: 4.5vw;
-    }
+
+
 
     /* Table of Contents Ends */
 
@@ -907,7 +841,6 @@ video {
     /* Title Card Begins */
 
     .title-card {
-        flex-direction: column; /* keep */
         height: 80vh;
     }
 
@@ -935,9 +868,7 @@ video {
         width: 75vw;
     }
 
-    .title-text h5 {
-        font-size: 7vw;
-    }
+    
 
     /* Title Card Ends */
 
@@ -959,25 +890,18 @@ video {
 
 
 
-    .title-heading-medium {
-        margin-top: 3vh;
-        font-size: 7.5vw;
-    }
+    
 
 
     /* Big Card Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 72vw;
-    }
+    
 
 
 
-    .text-bottom-card {
-        font-size: 4vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -1014,22 +938,16 @@ video {
         margin-bottom: 6vh;
     }
 
-    .toc-big-heading {
-        font-size: 6vw;
-    }
+
     
     .toc-item-container {
         margin-top: 3vh;
         padding: 3vw;
     }
     
-    .toc-heading {
-        font-size: 4.5vw;
-    }
 
-    .toc-title {
-        font-size: 4.5vw;
-    }
+
+
 
     /* Table of Contents Ends */
 
@@ -1087,7 +1005,6 @@ video {
     /* Title Card Begins */
 
     .title-card {
-        flex-direction: column; /* keep */
         height: 90vh;
     }
 
@@ -1115,9 +1032,7 @@ video {
         width: 75vw;
     }
 
-    .title-text h5 {
-        font-size: 7vw;
-    }
+    
 
     /* Title Card Ends */
 
@@ -1139,24 +1054,17 @@ video {
 
 
 
-    .title-heading-medium {
-        margin-top: 3vh;
-        font-size: 7.5vw;
-    }
+    
 
     /* Big Card Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 72vw;
-    }
+    
 
 
 
-    .text-bottom-card {
-        font-size: 4vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -1193,22 +1101,16 @@ video {
         margin-bottom: 6vh;
     }
 
-    .toc-big-heading {
-        font-size: 6vw;
-    }
+
     
     .toc-item-container {
         margin-top: 3vh;
         padding: 3vw;
     }
     
-    .toc-heading {
-        font-size: 4.5vw;
-    }
 
-    .toc-title {
-        font-size: 4.5vw;
-    }
+
+
 
     /* Table of Contents Ends */
 
@@ -1266,7 +1168,6 @@ video {
     /* Title Card Begins */
 
     .title-card {
-        flex-direction: column; /* keep */
         height: 90vh;
     }
 
@@ -1294,9 +1195,7 @@ video {
         width: 55vw;
     }
 
-    .title-text h5 {
-        font-size: 7vw;
-    }
+    
 
 
     /* Title Card Ends */
@@ -1319,24 +1218,17 @@ video {
 
     
 
-    .title-heading-medium {
-        margin-top: 3vh;
-        font-size: 7.5vw;
-    }
+    
 
     /* Big Card Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 72vw;
-    }
+    
 
 
 
-    .text-bottom-card {
-        font-size: 4vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -1373,22 +1265,16 @@ video {
         margin-bottom: 6vh;
     }
 
-    .toc-big-heading {
-        font-size: 6vw;
-    }
+
     
     .toc-item-container {
         margin-top: 3vh;
         padding: 3vw;
     }
     
-    .toc-heading {
-        font-size: 4.5vw;
-    }
 
-    .toc-title {
-        font-size: 4.5vw;
-    }
+
+
 
     /* Table of Contents Ends */
 
@@ -1445,9 +1331,7 @@ video {
 
     /* Title Card Begins */
 
-    .title-card {
-        flex-direction: row; /* keep */
-    }
+
 
     .title-text {
         display: flex; /* keep */
@@ -1473,9 +1357,7 @@ video {
         width: 45vw;
     }
 
-    .title-text h5 {
-        font-size: 5vw;
-    }
+    
 
     /* Title Card Ends */
 
@@ -1497,10 +1379,7 @@ video {
 
     
 
-    .title-heading-medium {
-        margin-top: 0.5vh;
-        font-size: 4.5vw;
-    }
+    
 
     /* Big Card Ends */
 
@@ -1513,23 +1392,17 @@ video {
         height: 20vh;
     }
 
-    .footer-message {
-        font-size: 1.5vw;
-    }
+    
 
     /* Footer Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 52vw;
-    }
+    
 
 
 
-    .text-bottom-card {
-        font-size: 2vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -1606,9 +1479,7 @@ video {
 
     /* Title Card Begins */
 
-    .title-card {
-        flex-direction: row; /* keep */
-    }
+
 
     .title-text {
         display: flex; /* keep */
@@ -1634,9 +1505,7 @@ video {
         width: 45vw;
     }
 
-    .title-text h5 {
-        font-size: 5vw;
-    }
+    
 
     /* Title Card Ends */
 
@@ -1662,10 +1531,7 @@ video {
         height: 80vh;
     }
 
-    .title-heading-medium {
-        margin-top: 0.5vh;
-        font-size: 4.5vw;
-    }
+    
 
     /* Big Card Ends */
 
@@ -1689,23 +1555,17 @@ video {
         height: 20vh;
     }
 
-    .footer-message {
-        font-size: 1.5vw;
-    }
+    
 
     /* Footer Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 48vw;
-    }
+    
 
 
 
-    .text-bottom-card {
-        font-size: 2vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -1803,9 +1663,7 @@ video {
 
     /* Title Card Begins */
 
-    .title-card {
-        flex-direction: row; /* keep */
-    }
+
 
     .title-text {
         display: flex; /* keep */
@@ -1831,9 +1689,7 @@ video {
         width: 38vw;
     }
 
-    .title-text h5 {
-        font-size: 5vw;
-    }
+    
 
     /* Title Card Ends */
 
@@ -1859,10 +1715,7 @@ video {
         height: 80vh;
     }
 
-    .title-heading-medium {
-        margin-top: 0.5vh;
-        font-size: 4.5vw;
-    }
+    
 
     /* Big Card Ends */
 
@@ -1888,23 +1741,17 @@ video {
         height: 20vh;
     }
 
-    .footer-message {
-        font-size: 1.5vw;
-    }
+    
 
     /* Footer Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 35vw;
-    }
+    
 
 
 
-    .text-bottom-card {
-        font-size: 2vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -1941,9 +1788,7 @@ video {
         margin: 8vh 0 16vh 0;
     }
 
-    .toc-big-heading {
-        font-size: 5vw;
-    }
+
     
     .toc-item-container {
         margin-top: 3vh;
@@ -1973,11 +1818,6 @@ video {
 @media (min-aspect-ratio: 17/10) and (max-aspect-ratio: 18/10) {
 
     /* Title Card Begins */
-
-    .title-card {
-        flex-direction: row; 
-    }
-
     /* Title Card Ends */
 
     /* Big Card Begins */
@@ -2002,10 +1842,7 @@ video {
         height: 80vh;
     }
 
-    .title-heading-medium {
-        margin-top: 0.5vh;
-        font-size: 4.5vw;
-    }
+    
 
     /* Big Card Ends */
 
@@ -2029,23 +1866,17 @@ video {
         height: 20vh;
     }
 
-    .footer-message {
-        font-size: 1vw;
-    }
+    
 
     /* Footer Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 35vw;
-    }
+    
 
 
 
-    .text-bottom-card {
-        font-size: 2vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -2086,9 +1917,7 @@ video {
         margin: 8vh 0 16vh 0;
     }
 
-    .toc-big-heading {
-        font-size: 5vw;
-    }
+
     
     .toc-item-container {
         margin-top: 3vh;
@@ -2116,9 +1945,6 @@ video {
 
     /* Title Card Begins */
 
-    .title-card {
-        flex-direction: row; 
-    }
 
     /* Title Card Ends */
 
@@ -2144,10 +1970,7 @@ video {
         height: 80vh;
     }
 
-    .title-heading-medium {
-        font-size: 4.5vw;
-    }
-
+    
     /* Big Card Ends */
 
     /* Small Cards Begins*/
@@ -2173,23 +1996,15 @@ video {
         height: 20vh;
     }
 
-    .footer-message {
-        font-size: 1vw;
-    }
+
 
     /* Footer Ends */
 
     /* Card w/ Image At the Bottom Begins */
 
-    .img-bottom {
-        width: 30vw;
-    }
 
 
-
-    .text-bottom-card {
-        font-size: 1.5vw;
-    }
+    
 
     /* Card w/ Image At the Bottom Ends */
 
@@ -2224,10 +2039,6 @@ video {
 
     .table-of-contents {
         margin: 8vh 0 16vh 0;
-    }
-
-    .toc-big-heading {
-        font-size: 5vw;
     }
     
     .toc-item-container {
@@ -2314,4 +2125,9 @@ video {
 .only-image {
     max-width: 100%;
     max-height: 100%;
+}
+
+.title-heading-medium {
+    font-size: 8vmin;
+    margin: 0.5vmin 0;
 }
