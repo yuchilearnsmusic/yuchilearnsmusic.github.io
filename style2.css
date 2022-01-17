@@ -50,6 +50,11 @@ h5 {
     margin-right: 2vw;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Colours */
 
@@ -476,6 +481,7 @@ button a {
 
 
 
+
 /* ------------------------ CONTENT ENDS --------------------------*/
 
 /* ------------------------ FOOTER BEGINS --------------------------*/
@@ -586,6 +592,10 @@ video {
 
     /* Universal */
 
+    header {
+        padding: 1% 10%;
+    }
+
     .instagram {
         height: 7vh;
     }
@@ -612,6 +622,11 @@ video {
 
     .title-image-holder {
         padding: 0 2vmin;
+    }
+
+    .card {
+        padding: 3vw;
+        border-radius: 7vw;
     }
 
 }
@@ -661,701 +676,51 @@ video {
         font-size: 6vmin;
     }
 
-        /* Title Card Begins */
+    /* Title Card Begins */
 
-        .title-image-holder {
-            height: 70%;
-            width: 100%;
-            padding: 10vmin 10vmin 0 10vmin;
-        }
-    
-        .title-text{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 30%;  
-        }
+    .title-image-holder {
+        height: 70%;
+        width: 100%;
+        padding: 10vmin 10vmin 0 10vmin;
+    }
 
+    .title-text {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        padding-top: 3vh; 
+        height: 30%;  
+    }
+
+    /* Welcome Div Begins */
+    .welcome-div {
+        flex-direction: column;
+        justify-content: center;
+        padding: 12vw;
+    }
     
 }
 
 /* Media Queries with Aspect Ratios*/
 
-/* Phones */
-
-@media (max-aspect-ratio: 3/5) {
-
-    /* Title Card Begins */
-
-    .title-card {
-        height: 75vh;
-    }
-
-    .title-heading-big {
-        margin-top: 3vh;
-        font-size: 12vw;
-    }
-
-    button {
-        padding: 1.5vw 4vw;
-        font-size: 3vw;
-        width: 40vw;
-    }
-
-    .img-title {
-        margin-top: 10vh;
-        width: 75vw;
-    }
+@media (min-aspect-ratio: 18/10){
 
     /* Big Card Begins */
-
 
     .title-top {
         padding-left: 3vw
     }
 
-    .card {
-        padding: 5vw;
-        border-radius: 12vw;
-    }
-
-    /* Next Module Card Begins */
-
-    .next-container {
-        padding: 2vw 2vw;
-        width: 55vw;
-    }
-
-    .next {
-        font-size: 6vw;
-    }
-
-    .arrow {
-        height: 6vw;
-    }
-
-    .next-card-title {
-        text-align: center;
-    }
-
-    /* Next Module Card Ends */
-
-    /* Table of Contents Begins */
-
-    .table-of-contents {
-        margin-bottom: 6vh;
-    }
-
-
-    
-    .toc-item-container {
-        margin-top: 3vh;
-        padding: 3vw;
-    }
-    
-
-
-
-
-    /* Table of Contents Ends */
-
-    /* Welcome Begins */
-
-    .welcome-div {
-        flex-direction: column;
-        justify-content: center;
-        padding: 12vw;
-    }
-
-    .welcome-text {
-        width: 100%;
-    }
-    
-    .welcome-text h1 {
-        font-size: 7vw;
-        display: none;
-    }
-    
-    .welcome-text h4 {
-        font-size: 5vw;
-        margin: 3vh 0;
-    }
-    
-    .welcome-text button {
-        padding: 2.5vw 4vw;
-        width: 50vw;
-        margin-top: 0;
-        font-size: 4vw;
-    }
-
-    .welcome-div img {
-        width: 40vw;
-    }
-
-    /* Welcome Ends*/
-
-    .img-square {
-        width: 70vw;
-    }
-
-    .oval-image {
-        width: 70vw;
-    }
-
-
-
-}
-
-/* for tablets */
-
-@media (min-aspect-ratio: 3/5) and (max-aspect-ratio: 7/10) {
-
-    /* Title Card Begins */
-
-    .title-card {
+    .big-card {
         height: 80vh;
     }
 
-    .title-text {
-        display: flex; /* keep */
-        flex-direction: column; /* keep */
-        align-items: center; /* keep */
-        width: 100%; /* keep */
-        padding-top: 3vh; /* keep */
-    }
-
-    .title-heading-big {
-        margin-top: 2vh;
-        font-size: 9vw;
-    }
-
-    button {
-        padding: 1.5vw 4vw; /* keep */
-        font-size: 3vw; /* keep */
-        width: 40vw; /* keep */
-    }
-
-    .img-title {
-        margin-top: 5vh;
-        width: 75vw;
-    }
-
-    
-
-    /* Title Card Ends */
-
-    /* Big Card Begins */
-
-    
-
-
-    /* phone() */
-
-    .title-top {
-        padding-left: 3vw
-    }
-
-    .card {
-        padding: 5vw;
-        border-radius: 12vw;
-    }
-
-
-
-    
-
-
-    /* Big Card Ends */
-
-    /* Card w/ Image At the Bottom Begins */
-
-    
-
-
-
-    
-
-    /* Card w/ Image At the Bottom Ends */
-
-
-
-    /* Next Module Card Begins */
-
-    .next-container {
-        padding: 2vw 2vw;
-        width: 55vw;
-    }
-
-    .next {
-        font-size: 6vw;
-    }
-
-    .arrow {
-        height: 6vw;
-    }
-
-    /* Next Module Card Ends */
-
-    /* Learn Begins */
-
-    .learn-text h2 {
-        font-size: 6vw;
-    }
-
-    /* Learn Ends */
-
-    /* Table of Contents Begins */
-
-    .table-of-contents {
-        margin-bottom: 6vh;
-    }
-
-
-    
-    .toc-item-container {
-        margin-top: 3vh;
-        padding: 3vw;
-    }
-    
-
-
-
-
-    /* Table of Contents Ends */
-
-    /* Welcome Begins */
-
-    .welcome-div {
-        flex-direction: column;
-        justify-content: center;
-        padding: 12vw;
-    }
-
-    .welcome-text {
-        width: 100%;
-    }
-    
-    .welcome-text h1 {
-        font-size: 7vw;
-        display: none;
-    }
-    
-    .welcome-text h4 {
-        font-size: 5vw;
-        margin: 3vh 0;
-    }
-    
-    .welcome-text button {
-        padding: 2.5vw 4vw;
-        width: 50vw;
-        margin-top: 0;
-        font-size: 4vw;
-    }
-
-    .welcome-div img {
-        width: 40vw;
-    }
-
-    /* Welcome Ends*/
-
-    .img-square {
-        width: 70vw;
-    }
-
-    .oval-image {
-        width: 66vw;
-    }
-
-
-}
-
-/* for longer tablets */
-
-@media (min-aspect-ratio: 7/10) and (max-aspect-ratio: 8/10) {
-
-
-    /* Title Card Begins */
-
-    .title-card {
-        height: 90vh;
-    }
-
-    .title-text {
-        display: flex; /* keep */
-        flex-direction: column; /* keep */
-        align-items: center; /* keep */
-        width: 100%; /* keep */
-        padding-top: 3vh; /* keep */
-    }
-
-    .title-heading-big {
-        margin-top: 2vh;
-        font-size: 9vw;
-    }
-
-    button {
-        padding: 1.5vw 4vw; /* keep */
-        font-size: 3vw; /* keep */
-        width: 40vw; /* keep */
-    }
-
-    .img-title {
-        margin-top: 7vh;
-        width: 75vw;
-    }
-
-    
-
-    /* Title Card Ends */
-
-    /* Big Card Begins */
-
-    
-
-
-    /* phone() */
-
-    .title-top {
-        padding-left: 3vw
-    }
-
-    .card {
-        padding: 5vw;
-        border-radius: 12vw;
-    }
-
-
-
-    
-
-    /* Big Card Ends */
-
-    /* Card w/ Image At the Bottom Begins */
-
-    
-
-
-
-    
-
-    /* Card w/ Image At the Bottom Ends */
-
-
-
-    /* Next Module Card Begins */
-
-    .next-container {
-        padding: 2vw 2vw;
-        width: 55vw;
-    }
-
-    .next {
-        font-size: 6vw;
-    }
-
-    .arrow {
-        height: 6vw;
-    }
-
-    /* Next Module Card Ends */
-
-    /* Learn Begins */
-
-    .learn-text h2 {
-        font-size: 6vw;
-    }
-
-    /* Learn Ends */
-
-    /* Table of Contents Begins */
-
-    .table-of-contents {
-        margin-bottom: 6vh;
-    }
-
-
-    
-    .toc-item-container {
-        margin-top: 3vh;
-        padding: 3vw;
-    }
-    
+    /* Small Cards Begins*/
 
-
-
-
-    /* Table of Contents Ends */
-
-    /* Welcome Begins */
-
-    .welcome-div {
-        flex-direction: column;
-        justify-content: center;
-        padding: 12vw;
-    }
-
-    .welcome-text {
-        width: 100%;
-    }
-    
-    .welcome-text h1 {
-        font-size: 7vw;
-        display: none;
-    }
-    
-    .welcome-text h4 {
-        font-size: 5vw;
-        margin: 3vh 0;
-    }
-    
-    .welcome-text button {
-        padding: 2.5vw 4vw;
-        width: 50vw;
-        margin-top: 0;
-        font-size: 4vw;
-    }
-
-    .welcome-div img {
-        width: 40vw;
-    }
-
-    /* Welcome Ends*/
-
-    .img-square {
-        width: 70vw;
-    }
-
-    .oval-image {
-        width: 58vw;
-    }
-
-
-
-}
-
-/* shorter tablets */
-
-@media (min-aspect-ratio: 8/10) and (max-aspect-ratio: 1/1) {
-
-    /* Title Card Begins */
-
-    .title-card {
-        height: 90vh;
-    }
-
-    .title-text {
-        display: flex; /* keep */
-        flex-direction: column; /* keep */
-        align-items: center; /* keep */
-        width: 100%; /* keep */
-        padding-top: 3vh; /* keep */
-    }
-
-    .title-heading-big {
-        margin-top: 2vh;
-        font-size: 9vw;
-    }
-
-    button {
-        padding: 1.5vw 4vw; /* keep */
-        font-size: 3vw; /* keep */
-        width: 40vw; /* keep */
-    }
-
-    .img-title {
-        margin-top: 5vh;
-        width: 55vw;
-    }
-
-    
-
-
-    /* Title Card Ends */
-
-    /* Big Card Begins */
-
-
-
-
-    /* phone() */
-
-    .title-top {
-        padding-left: 3vw
-    }
-
-    .card {
-        padding: 5vw;
-        border-radius: 12vw;
-    }
-
-    
-
-    
-
-    /* Big Card Ends */
-
-    /* Card w/ Image At the Bottom Begins */
-
-    
-
-
-
-    
-
-    /* Card w/ Image At the Bottom Ends */
-
-
-
-    /* Next Module Card Begins */
-
-    .next-container {
-        padding: 2vw 2vw;
-        width: 45vw;
-    }
-
-    .next {
-        font-size: 5vw;
+    .small-card {
+        height: 70vh;
     }
-
-    .arrow {
-        height: 5vw;
-    }
-
-    /* Next Module Card Ends */
-
-    /* Learn Begins */
-
-    .learn-text h2 {
-        font-size: 6vw;
-    }
-
-    /* Learn Ends */
-
-    /* Table of Contents Begins */
-
-    .table-of-contents {
-        margin-bottom: 6vh;
-    }
-
-
-    
-    .toc-item-container {
-        margin-top: 3vh;
-        padding: 3vw;
-    }
-    
-
-
-
-
-    /* Table of Contents Ends */
-
-    /* Welcome Begins */
-
-    .welcome-div {
-        flex-direction: column;
-        justify-content: center;
-        padding: 12vw;
-    }
-
-    .welcome-text {
-        width: 100%;
-    }
-    
-    .welcome-text h1 {
-        font-size: 7vw;
-        display: none;
-    }
-    
-    .welcome-text h4 {
-        font-size: 5vw;
-        margin: 3vh 0;
-    }
-    
-    .welcome-text button {
-        padding: 2.5vw 4vw;
-        width: 50vw;
-        margin-top: 0;
-        font-size: 4vw;
-    }
-
-    .welcome-div img {
-        width: 40vw;
-    }
-
-    /* Welcome Ends*/
-
-    .img-square {
-        width: 50vw;
-    }
-
-    .oval-image {
-        width: 40vw;
-    }
-
-
-
-}
-
-/* laptops */
-
-@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 13/10) {
-
-    /* Title Card Begins */
-
-
-
-    .title-text {
-        display: flex; /* keep */
-        flex-direction: column; /* keep */
-        justify-content: center;
-        width: 45%; /* keep */
-        padding-top: 3vh; /* keep */
-    }
-
-    .title-heading-big {
-        margin-top: 0;
-        font-size: 5vw;
-    }
-
-    button {
-        padding: 1.5vw 4vw; /* keep */
-        font-size: 3vw; /* keep */
-        width: 40vw; /* keep */
-    }
-
-    .img-title {
-        margin-top: 5vh;
-        width: 45vw;
-    }
-
-    
-
-    /* Title Card Ends */
-
-    /* Big Card Begins */
-
-    
-
-
-    /* phone() */
-
-    .title-top {
-        padding-left: 3vw
-    }
-
-    .card {
-        padding: 3vw;
-        border-radius: 7vw;
-    }
-
-    
-
-    
-
-    /* Big Card Ends */
-
 
     /* Footer Begins */
 
@@ -1365,36 +730,89 @@ video {
         height: 20vh;
     }
 
-    
+    /* Learn Begins */
 
-    /* Footer Ends */
-
-    /* Card w/ Image At the Bottom Begins */
-
-    
-
-
-
-    
-
-    /* Card w/ Image At the Bottom Ends */
-
-    /* Next Module Card Begins */
-
-    .next-card {
-        padding: 6vw 0;
+    .learn-text h2 {
+        font-size: 2.5vw;
     }
 
-    /* Next Module Card Ends */
+    .category-link {
+        font-size: 1.5vw;
+        font-weight: 100;
+    }
+
+    .compression-courses {
+        justify-content: start;
+        padding-left: 3vw;
+    }
+
+    .course-slot p {
+        font-size: 1vw;
+    }
+
+    .course-slot {
+        width: 20vw;
+        margin-right: 1vw;
+    }
+
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin: 8vh 0 16vh 0;
+    }
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 2vw;
+    }
+    
+    .toc-heading {
+        font-size: 2vw;
+    }
+
+    .toc-title {
+        font-size: 2vw;
+    }
+
+
+    .img-square {
+        width: 35vw;
+    }
+
+}
+
+@media (max-aspect-ratio: 18/10) {
+
+    /* Big Card Begins */
+
+    .title-top {
+        padding-left: 3vw
+    }
+
+    /* Footer Begins */
+
+    footer {
+        justify-content: space-around;
+        flex-direction: row;
+        height: 20vh;
+    }
+
+    /* .big-card {
+        height: 80vh;
+    }
+
+    .small-card {
+        height: 70vh;
+    } */
 
     /* Learn Begins */
 
     .learn-text h2 {
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
     .category-link {
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-weight: 100;
     }
 
@@ -1412,9 +830,68 @@ video {
         margin-right: 1vw;
     }
 
-    /* Learn Ends */
+    /* Table of Contents Begins */
 
-    /* Welcome Begins */
+    .table-of-contents {
+        margin: 8vh 0 16vh 0;
+    }
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 2vw;
+    }
+    
+    .toc-heading {
+        font-size: 2vw;
+    }
+
+    .toc-title {
+        font-size: 2vw;
+    }
+
+    /* Table of Contents Ends */
+
+    .img-square {
+        width: 40vw;
+    }
+
+}
+
+@media (max-aspect-ratio: 17/10) {
+
+    /* Title Card Begins */
+
+    .title-text {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        width: 45%; 
+        padding-top: 3vh; 
+    }
+
+    button {
+        padding: 1.5vw 4vw; 
+        font-size: 3vw; 
+        width: 40vw; 
+    }
+
+    .img-title {
+        margin-top: 5vh;
+        width: 38vw;
+    }
+
+    /* Learn Begins */
+
+    .learn-text h2 {
+        font-size: 2.5vw;
+    }
+
+    .img-square {
+        width: 46vw;
+    }
+}
+
+@media (min-aspect-ratio: 14/10) and (max-aspect-ratio: 16/10) {
 
     .welcome-div {
         padding: 12vw;
@@ -1425,122 +902,33 @@ video {
     }
     
     .welcome-text h4 {
-        font-size: 2.25vw;
+        font-size: 2.5vw;
     }
     
     .welcome-text button {
-        padding: 1vw;
-        margin-top: 1.5vh;
         width: 17vw;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
-
-    /* Welcome Ends*/
 
     .img-square {
-        width: 45vw;
-    }
-
-    .oval-image {
-        width: 34vw;
+        width: 40vw;
     }
 
 }
 
+@media (min-aspect-ratio: 15/10) {
+    .card {
+        width: 80%;
+    }
+}
 
-@media (min-aspect-ratio: 13/10) and (max-aspect-ratio: 14/10) {
+@media (max-aspect-ratio: 14/10) {
 
     /* Title Card Begins */
 
-
-
-    .title-text {
-        display: flex; /* keep */
-        flex-direction: column; /* keep */
-        justify-content: center;
-        width: 45%; /* keep */
-        padding-top: 3vh; /* keep */
-    }
-
-    .title-heading-big {
-        margin-top: 0;
-        font-size: 5vw;
-    }
-
-    button {
-        padding: 1.5vw 4vw; /* keep */
-        font-size: 3vw; /* keep */
-        width: 40vw; /* keep */
-    }
-
     .img-title {
-        margin-top: 5vh;
         width: 45vw;
     }
-
-    
-
-    /* Title Card Ends */
-
-    /* Big Card Begins */
-
-    
-
-
-    /* phone() */
-
-    .title-top {
-        padding-left: 3vw
-    }
-
-    .card {
-        padding: 3vw;
-        border-radius: 7vw;
-    }
-
-    
-
-    .big-card {
-        height: 80vh;
-    }
-
-    
-
-    /* Big Card Ends */
-
-    /* Small Cards Begins*/
-
-    
-
-
-
-    
-
-
-
-    /* Small Cards Ends*/
-
-    /* Footer Begins */
-
-    footer {
-        justify-content: space-around;
-        flex-direction: row;
-        height: 20vh;
-    }
-
-    
-
-    /* Footer Ends */
-
-    /* Card w/ Image At the Bottom Begins */
-
-    
-
-
-
-    
-
-    /* Card w/ Image At the Bottom Ends */
 
     /* Next Module Card Begins */
 
@@ -1548,8 +936,6 @@ video {
         padding: 5vw 0;
     }
 
-    /* Next Module Card Ends */
-
     /* Learn Begins */
 
     .learn-text h2 {
@@ -1558,24 +944,7 @@ video {
 
     .category-link {
         font-size: 2vw;
-        font-weight: 100;
     }
-
-    .compression-courses {
-        justify-content: start;
-        padding-left: 3vw;
-    }
-
-    .course-slot p {
-        font-size: 1.75vw;
-    }
-
-    .course-slot {
-        width: 25vw;
-        margin-right: 1vw;
-    }
-
-    /* Learn Ends */
 
     /* Welcome Begins */
 
@@ -1604,445 +973,175 @@ video {
         width: 48vw;
     }
 
-
 }
 
-@media (min-aspect-ratio: 14/10) and (max-aspect-ratio: 16/10) {
 
-    .welcome-div {
-        padding: 12vw;
-    }
-    
-    .welcome-text h1 {
-        font-size: 7vw;
-    }
-    
-    .welcome-text h4 {
-        font-size: 2.5vw;
-    }
-    
-    .welcome-text button {
-        width: 17vw;
-        font-size: 3vw;
+/* laptops */
+
+@media (max-aspect-ratio: 13/10) {
+
+    /* Next Module Card Begins */
+
+    .next-card {
+        padding: 6vw 0;
     }
 
     .img-square {
-        width: 40vw;
+        width: 45vw;
     }
 
 }
 
-@media (min-aspect-ratio: 14/10) and (max-aspect-ratio: 17/10) {
+
+/* shorter tablets */
+
+@media (max-aspect-ratio: 1/1) {
 
     /* Title Card Begins */
 
-
-
-    .title-text {
-        display: flex; /* keep */
-        flex-direction: column; /* keep */
-        justify-content: center;
-        width: 45%; /* keep */
-        padding-top: 3vh; /* keep */
+    .title-card {
+        height: 90vh;
     }
 
-    .title-heading-big {
-        margin-top: 0;
+    .img-title {
+        width: 55vw;
+    }
+
+    /* Big Card Begins */
+
+    .card {
+        padding: 5vw;
+        border-radius: 12vw;
+    }
+
+    /* Next Module Card Begins */
+
+    .next-container {
+        width: 45vw;
+    }
+
+    .next {
         font-size: 5vw;
     }
 
-    button {
-        padding: 1.5vw 4vw; /* keep */
-        font-size: 3vw; /* keep */
-        width: 40vw; /* keep */
+    .arrow {
+        height: 5vw;
+    }
+
+    /* Table of Contents Begins */
+
+    .table-of-contents {
+        margin-bottom: 6vh;
+    }
+
+    
+    .toc-item-container {
+        margin-top: 3vh;
+        padding: 3vw;
+    }
+    
+    /* Welcome Begins */
+
+    .welcome-text {
+        width: 100%;
+    }
+    
+    .welcome-text h1 {
+        display: none;
+    }
+    
+    .welcome-text h4 {
+        font-size: 5vw;
+        margin: 3vh 0;
+    }
+    
+    .welcome-text button {
+        padding: 2.5vw 4vw;
+        width: 50vw;
+        margin-top: 0;
+        font-size: 4vw;
+    }
+
+    .welcome-div img {
+        width: 40vw;
+    }
+
+    /* Welcome Ends*/
+
+    .img-square {
+        width: 50vw;
+    }
+}
+
+
+/* for longer tablets */
+
+@media (max-aspect-ratio: 8/10) {
+
+    /* Title Card Begins */
+
+    .img-title {
+        margin-top: 7vh;
+        width: 75vw;
+    }
+
+    /* Next Module Card Begins */
+
+    .next-container {
+        padding: 2vw 2vw;
+        width: 55vw;
+    }
+
+    .next {
+        font-size: 6vw;
+    }
+
+    .arrow {
+        height: 6vw;
+    }
+
+    .img-square {
+        width: 70vw;
+    }
+}
+
+
+/* for tablets */
+
+@media (max-aspect-ratio: 7/10) {
+
+    /* Title Card Begins */
+
+    .title-card {
+        height: 80vh;
     }
 
     .img-title {
         margin-top: 5vh;
-        width: 38vw;
+        width: 75vw;
     }
-
-    
-
-    /* Title Card Ends */
-
-    /* Big Card Begins */
-
-    
-
-
-    /* phone() */
-
-    .title-top {
-        padding-left: 3vw
-    }
-
-    .card {
-        padding: 3vw;
-        border-radius: 7vw;
-    }
-
-    
-
-    .big-card {
-        height: 80vh;
-    }
-
-    
-
-    /* Big Card Ends */
-
-    /* Small Cards Begins*/
-
-    
-
-
-
-    
-
-
-
-
-
-    /* Small Cards Ends*/
-
-    /* Footer Begins */
-
-    footer {
-        justify-content: space-around;
-        flex-direction: row;
-        height: 20vh;
-    }
-
-    
-
-    /* Footer Ends */
-
-    /* Card w/ Image At the Bottom Begins */
-
-    
-
-
-
-    
-
-    /* Card w/ Image At the Bottom Ends */
-
-    /* Learn Begins */
-
-    .learn-text h2 {
-        font-size: 2.5vw;
-    }
-
-    .category-link {
-        font-size: 1.5vw;
-        font-weight: 100;
-    }
-
-    .compression-courses {
-        justify-content: start;
-        padding-left: 3vw;
-    }
-
-    .course-slot p {
-        font-size: 1.75vw;
-    }
-
-    .course-slot {
-        width: 25vw;
-        margin-right: 1vw;
-    }
-
-    /* Learn Ends */
-
-    /* Table of Contents Begins */
-
-    .table-of-contents {
-        margin: 8vh 0 16vh 0;
-    }
-
-
-    
-    .toc-item-container {
-        margin-top: 3vh;
-        padding: 2vw;
-    }
-    
-    .toc-heading {
-        font-size: 2vw;
-    }
-
-    .toc-title {
-        font-size: 2vw;
-    }
-
-    /* Table of Contents Ends */
-
-    .img-square {
-        width: 46vw;
-    }
-
-    .oval-image {
-        width: 31.5vw;
-    }
-
 }
 
-@media (min-aspect-ratio: 17/10) and (max-aspect-ratio: 18/10) {
+
+@media (max-aspect-ratio: 3/5) {
 
     /* Title Card Begins */
-    /* Title Card Ends */
 
-    /* Big Card Begins */
-
-    
-
-
-    /* phone() */
-
-    .title-top {
-        padding-left: 3vw
+    .title-card {
+        height: 75vh;
     }
 
-    .card {
-        padding: 3vw;
-        border-radius: 7vw;
+    .img-title {
+        margin-top: 10vh;
+        width: 75vw;
     }
-
-    
-
-    .big-card {
-        height: 80vh;
-    }
-
-    
-
-    /* Big Card Ends */
-
-    /* Small Cards Begins*/
-
-    
-
-
-
-    
-
-
-
-    /* Small Cards Ends*/
-
-    /* Footer Begins */
-
-    footer {
-        justify-content: space-around;
-        flex-direction: row;
-        height: 20vh;
-    }
-
-    
-
-    /* Footer Ends */
-
-    /* Card w/ Image At the Bottom Begins */
-
-    
-
-
-
-    
-
-    /* Card w/ Image At the Bottom Ends */
 
     .next-card-title {
-        font-size: 2.25vw;
-    }
-
-    /* Learn Begins */
-
-    .learn-text h2 {
-        font-size: 2.5vw;
-    }
-
-    .category-link {
-        font-size: 1.5vw;
-        font-weight: 100;
-    }
-
-    .compression-courses {
-        justify-content: start;
-        padding-left: 3vw;
-    }
-
-    .course-slot p {
-        font-size: 1.75vw;
-    }
-
-    .course-slot {
-        width: 25vw;
-        margin-right: 1vw;
-    }
-
-    /* Learn Ends */
-
-    /* Table of Contents Begins */
-
-    .table-of-contents {
-        margin: 8vh 0 16vh 0;
-    }
-
-
-    
-    .toc-item-container {
-        margin-top: 3vh;
-        padding: 2vw;
-    }
-    
-    .toc-heading {
-        font-size: 2vw;
-    }
-
-    .toc-title {
-        font-size: 2vw;
-    }
-
-    /* Table of Contents Ends */
-
-    .img-square {
-        width: 40vw;
-    }
-
-}
-
-
-@media (min-aspect-ratio: 18/10){
-
-    /* Title Card Begins */
-
-
-    /* Title Card Ends */
-
-    /* Big Card Begins */
-
-    
-
-
-    /* phone() */
-
-    .title-top {
-        padding-left: 3vw
-    }
-
-    .card {
-        padding: 3vw;
-        border-radius: 7vw;
-    }
-
-    
-
-    .big-card {
-        height: 80vh;
-    }
-
-    
-    /* Big Card Ends */
-
-    /* Small Cards Begins*/
-
-    
-
-
-    .small-card {
-        height: 70vh;
-    }
-
-    
-
-
-
-    /* Small Cards Ends*/
-
-    /* Footer Begins */
-
-    footer {
-        justify-content: space-around;
-        flex-direction: row;
-        height: 20vh;
-    }
-
-
-
-    /* Footer Ends */
-
-    /* Card w/ Image At the Bottom Begins */
-
-
-
-    
-
-    /* Card w/ Image At the Bottom Ends */
-
-    /* Learn Begins */
-
-    .learn-text h2 {
-        font-size: 2.5vw;
-    }
-
-    .category-link {
-        font-size: 1.5vw;
-        font-weight: 100;
-    }
-
-    .compression-courses {
-        justify-content: start;
-        padding-left: 3vw;
-    }
-
-    .course-slot p {
-        font-size: 1vw;
-    }
-
-    .course-slot {
-        width: 20vw;
-        margin-right: 1vw;
-    }
-
-    /* Learn Ends */
-
-    /* Table of Contents Begins */
-
-    .table-of-contents {
-        margin: 8vh 0 16vh 0;
-    }
-    
-    .toc-item-container {
-        margin-top: 3vh;
-        padding: 2vw;
-    }
-    
-    .toc-heading {
-        font-size: 2vw;
-    }
-
-    .toc-title {
-        font-size: 2vw;
-    }
-
-    /* Table of Contents Ends */
-
-    .img-square {
-        width: 35vw;
-    }
-
-}
-
-@media (min-aspect-ratio: 15/10) {
-    .card {
-        width: 80%;
+        text-align: center;
     }
 }
 
 /* -----------------------------------PAGE TRANSITION BEGINS--------------------------------------------*/
-
 
 .transition{
     position: fixed;
@@ -2077,11 +1176,7 @@ video {
     left: 3vw;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Cards with images at the bottom and text on the top */
 
 .img-bottom-card {
     padding: 5vw 5vw 0 5vw;
