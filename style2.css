@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-    font-size: 4.5vw;
+    font-size: 4.5vmin;
     font-weight: 50;
 }
 
@@ -171,8 +171,12 @@ header {
     padding: 2vh 2vw 0 2vw;
 }
 
+.learn-text h2 {
+    color: black;
+}
+
 .learn-categories {
-    padding-top:1vh;
+    padding-top:2vh;
     width:100%;
     display:flex;
     justify-content: space-around;
@@ -214,9 +218,12 @@ header {
 
 .compression-courses {
     width:100%;
+    height: 60vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 5vw;
+    overflow: scroll;
 }
 
 .compression-courses a {
@@ -256,11 +263,11 @@ header {
 
 .title-image-holder {
     height: 100%;
-    width: 50%;
+    width: 55%;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .img-title {
@@ -272,14 +279,14 @@ button {
     background-color: white;
     border: none;
     border-radius: 1.5rem;
-    padding: 0.75vw 4vw;
     text-align: center;
     text-decoration: none;
-    font-size: 1.5vw;
     font-family: "Balsamiq Sans";
-    margin-top: 0.5vmin;
+    margin-top: 1vmin;
     cursor: pointer;
-    width: 30vw;
+    width: 40%;
+    height: 20%;
+    font-size: 3vmin;
 }
 
 button a {
@@ -355,6 +362,10 @@ button a {
     box-shadow: 0 6px 10px 0px rgba(255, 121, 89, 0.2), 0 12px 20px 0 rgba(255, 121, 89, 0.19);
 
     overflow:hidden;
+}
+
+.card h2 {
+    margin-left: 1.5vmin;
 }
 
 .big-card, .small-card {
@@ -621,7 +632,12 @@ video {
     }
 
     .title-image-holder {
-        padding: 0 2vmin;
+        align-items: center;
+    }
+
+    button {
+        padding: 1.5vmin 4vmin; 
+        width: 40vmin;
     }
 
     .card {
@@ -693,7 +709,13 @@ video {
         height: 30%;  
     }
 
+    .title-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     /* Welcome Div Begins */
+
     .welcome-div {
         flex-direction: column;
         justify-content: center;
@@ -710,6 +732,20 @@ video {
 
     .title-top {
         padding-left: 3vw
+    }
+
+    .title-text h4 {
+        font-size: 5vw;
+        font-weight: 300;
+    }
+
+    .title-text h2 {
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+
+    .title-image {
+        width: 35vw;
     }
 
     .big-card {
@@ -781,12 +817,26 @@ video {
 
 }
 
-@media (max-aspect-ratio: 18/10) {
+@media (orientation: landscape) and (max-aspect-ratio: 18/10) {
 
     /* Big Card Begins */
 
     .title-top {
         padding-left: 3vw
+    }
+
+    .title-text h4 {
+        font-size: 5vw;
+        font-weight: 300;
+    }
+
+    .title-text h2 {
+        font-size: 4.5vw;
+        font-weight: 600;
+    }
+
+    .title-image {
+        width: 38vw;
     }
 
     /* Footer Begins */
@@ -857,9 +907,13 @@ video {
 
 }
 
-@media (max-aspect-ratio: 17/10) {
+@media (orientation: landscape) and (max-aspect-ratio: 17/10) {
 
     /* Title Card Begins */
+
+    .title-card {
+        padding: 0;
+    }
 
     .title-text {
         display: flex; 
@@ -870,14 +924,9 @@ video {
     }
 
     button {
-        padding: 1.5vw 4vw; 
-        font-size: 3vw; 
-        width: 40vw; 
-    }
-
-    .img-title {
-        margin-top: 5vh;
-        width: 38vw;
+        padding: 1.5vw 4vw;
+        font-size: 3vw;
+        width: 40vw;
     }
 
     /* Learn Begins */
@@ -916,18 +965,20 @@ video {
 
 }
 
-@media (min-aspect-ratio: 15/10) {
+@media (orientation: landscape) and (min-aspect-ratio: 15/10) {
     .card {
         width: 80%;
     }
 }
 
-@media (max-aspect-ratio: 14/10) {
+@media (orientation: landscape) and (max-aspect-ratio: 14/10) {
 
     /* Title Card Begins */
 
-    .img-title {
+    .title-image {
+        margin-top: 5vh;
         width: 45vw;
+        height: auto;
     }
 
     /* Next Module Card Begins */
@@ -978,7 +1029,7 @@ video {
 
 /* laptops */
 
-@media (max-aspect-ratio: 13/10) {
+@media (orientation: landscape) and (max-aspect-ratio: 13/10) {
 
     /* Next Module Card Begins */
 
@@ -990,6 +1041,9 @@ video {
         width: 45vw;
     }
 
+
+
+
 }
 
 
@@ -1000,11 +1054,15 @@ video {
     /* Title Card Begins */
 
     .title-card {
-        height: 90vh;
+        height: 85vh;
     }
 
     .img-title {
         width: 55vw;
+    }
+
+    .title-text h4 {
+        font-size: 7vw;
     }
 
     /* Big Card Begins */
@@ -1080,6 +1138,10 @@ video {
 
     /* Title Card Begins */
 
+    .title-card {
+        height: 80vh;
+    }
+
     .img-title {
         margin-top: 7vh;
         width: 75vw;
@@ -1103,6 +1165,8 @@ video {
     .img-square {
         width: 70vw;
     }
+
+
 }
 
 
@@ -1113,13 +1177,14 @@ video {
     /* Title Card Begins */
 
     .title-card {
-        height: 80vh;
+        height: 75vh;
     }
 
     .img-title {
         margin-top: 5vh;
         width: 75vw;
     }
+
 }
 
 
@@ -1127,13 +1192,12 @@ video {
 
     /* Title Card Begins */
 
-    .title-card {
-        height: 75vh;
-    }
-
     .img-title {
         margin-top: 10vh;
-        width: 75vw;
+    }
+    
+    .title-text h5 {
+        font-size: 7vw;
     }
 
     .next-card-title {
